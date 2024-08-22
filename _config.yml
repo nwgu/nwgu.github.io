@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 개발블로그
+title: 구트리
 email: nwgu99@gmail.com
-author: GitHub User
+author: nwgu
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
