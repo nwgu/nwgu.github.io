@@ -7,22 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>ENUM 타입 핸들러 클래스 | 구트리</title>
+<title>Outlet 컴포넌트 | 구트리</title>
 <meta name="generator" content="Jekyll v4.3.3">
-<meta property="og:title" content="ENUM 타입 핸들러 클래스">
+<meta property="og:title" content="Outlet 컴포넌트">
 <meta name="author" content="nwgu">
 <meta property="og:locale" content="ko">
-<meta name="description" content="MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler를 사용하는 것이라고 한다. 분명 VO 에 명시를 해두었는데 db select 시 못 읽어오는 에러가 발생되어 찾아보니 Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler를 써야한다고 한다.">
-<meta property="og:description" content="MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler를 사용하는 것이라고 한다. 분명 VO 에 명시를 해두었는데 db select 시 못 읽어오는 에러가 발생되어 찾아보니 Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler를 써야한다고 한다.">
-<link rel="canonical" href="http://localhost:4000/dev/2024/08/21/enum.html">
-<meta property="og:url" content="http://localhost:4000/dev/2024/08/21/enum.html">
+<meta name="description" content="```react import { Outlet } from ‘react-router-dom’;">
+<meta property="og:description" content="```react import { Outlet } from ‘react-router-dom’;">
+<link rel="canonical" href="http://localhost:4000/dev/2024/08/22/react-router.html">
+<meta property="og:url" content="http://localhost:4000/dev/2024/08/22/react-router.html">
 <meta property="og:site_name" content="구트리">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2024-08-21T00:00:00+09:00">
+<meta property="article:published_time" content="2024-08-22T00:00:00+09:00">
 <meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="ENUM 타입 핸들러 클래스">
+<meta property="twitter:title" content="Outlet 컴포넌트">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nwgu"},"dateModified":"2024-08-21T00:00:00+09:00","datePublished":"2024-08-21T00:00:00+09:00","description":"MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler를 사용하는 것이라고 한다. 분명 VO 에 명시를 해두었는데 db select 시 못 읽어오는 에러가 발생되어 찾아보니 Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler를 써야한다고 한다.","headline":"ENUM 타입 핸들러 클래스","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dev/2024/08/21/enum.html"},"url":"http://localhost:4000/dev/2024/08/21/enum.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nwgu"},"dateModified":"2024-08-22T00:00:00+09:00","datePublished":"2024-08-22T00:00:00+09:00","description":"```react import { Outlet } from ‘react-router-dom’;","headline":"Outlet 컴포넌트","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dev/2024/08/22/react-router.html"},"url":"http://localhost:4000/dev/2024/08/22/react-router.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="icon" href="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -884,11 +884,11 @@ function googleTranslateElementInit() {
 
 
 <header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">ENUM 타입 핸들러 클래스</h1>
+  <h1 class="post-title p-name" itemprop="name headline">Outlet 컴포넌트</h1>
   <h2 class="post-subtitle"></h2>
 
   <p class="post-meta">
-    <time class="dt-published" datetime="2024-08-21T00:00:00+09:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Aug 21, 2024
+    <time class="dt-published" datetime="2024-08-22T00:00:00+09:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Aug 22, 2024
     </time>
 
     
@@ -928,30 +928,35 @@ function googleTranslateElementInit() {
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
   </p>
 <div class="post-tags">
-<a class="post-tag" href="/tags.html#DateTypeHandler.java">#DateTypeHandler.java</a><a class="post-tag" href="/tags.html#LunchParticipationTypeHandler.java">#LunchParticipationTypeHandler.java</a>
+<a class="post-tag" href="/tags.html#Outlet">#Outlet</a><a class="post-tag" href="/tags.html#react-router-dom">#react-router-dom</a><a class="post-tag" href="/tags.html#react">#react</a>
 </div></header>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="post-content e-content" itemprop="articleBody">
 
-      <p>MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler를 사용하는 것이라고 한다.
-분명 VO 에 명시를 해두었는데 db select 시 못 읽어오는 에러가 발생되어 찾아보니
-Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler를 써야한다고 한다.</p>
+      <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Outlet</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-router-dom</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">return </span><span class="p">(</span>
+    <span class="p">&lt;</span><span class="nc">Outlet</span><span class="p">/&gt;</span>
+<span class="p">)</span>
+
+</code></pre></div></div>
+<h3 id="해당-컴포넌트는-router-를-감싼-layout-에서-사용할-때-context-api-처럼-자식에서-데이터를-받아올수도-있다">해당 컴포넌트는 router 를 감싼 Layout 에서 사용할 때 context API 처럼 자식에서 데이터를 받아올수도 있다.</h3>
 
 
     </div>
 
 </article>
 <div class="post-nav">
-<a class="previous" href="/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html" title="SpringResourceTemplateResolver">SpringResourceTemplateResolver</a><a class="next" href="/dev/2024/08/22/react-router.html" title="Outlet 컴포넌트">Outlet 컴포넌트</a>
+<a class="previous" href="/dev/2024/08/21/enum.html" title="ENUM 타입 핸들러 클래스">ENUM 타입 핸들러 클래스</a><span></span>
 </div>
 <div class="post-related">
       <div>Related Articles</div>
       <ul>
-        <li><a class="post-link" href="/dev/2024/08/21/enum.html" title="Outlet 컴포넌트">ENUM 타입 핸들러 클래스</a></li>
-<li><a class="post-link" href="/dev/2024/08/22/react-router.html" title="Outlet 컴포넌트">Outlet 컴포넌트</a></li>
-<li><a class="post-link" href="/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html" title="Outlet 컴포넌트">SpringResourceTemplateResolver</a></li>
-<li><a class="post-link" href="/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85.html" title="Outlet 컴포넌트">지킬 세팅</a></li>
+        <li><a class="post-link" href="/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85.html" title="">지킬 세팅</a></li>
+<li><a class="post-link" href="/dev/2024/08/22/react-router.html" title="">Outlet 컴포넌트</a></li>
+<li><a class="post-link" href="/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html" title="">SpringResourceTemplateResolver</a></li>
+<li><a class="post-link" href="/dev/2024/08/21/enum.html" title="">ENUM 타입 핸들러 클래스</a></li>
 </ul>
     </div>
 <div class="post-comments"></div></section>
