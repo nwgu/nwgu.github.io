@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Outlet 컴포넌트
-subtitle: 
 categories: [dev]
-tags: [Outlet, react-router-dom, react]
 ---
 
+### React
 ```react
 import { Outlet } from 'react-router-dom';
 

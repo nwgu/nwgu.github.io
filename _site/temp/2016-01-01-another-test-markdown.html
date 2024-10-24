@@ -1,936 +1,112 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
+
+
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Another test markdown | 나무</title>
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Another test markdown | 구트리</title>
-<meta name="generator" content="Jekyll v4.3.3">
-<meta property="og:title" content="Another test markdown">
-<meta name="author" content="nwgu">
-<meta property="og:locale" content="ko">
-<link rel="canonical" href="http://localhost:4000/temp/2016-01-01-another-test-markdown.html">
-<meta property="og:url" content="http://localhost:4000/temp/2016-01-01-another-test-markdown.html">
-<meta property="og:site_name" content="구트리">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="Another test markdown">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"nwgu"},"headline":"Another test markdown","url":"http://localhost:4000/temp/2016-01-01-another-test-markdown.html"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="icon" href="">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="구트리">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="/assets/css/main.css" media="all">
+  <link rel="canonical" href="http://localhost:4000/temp/2016-01-01-another-test-markdown">
+  <link rel="alternate" type="application/rss+xml" title="나무"
+    href="/feed.xml" />
 
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-// Init highlight js
-document.addEventListener('DOMContentLoaded', function(event) {
-  var els = document.querySelectorAll('pre code')
-
-  function addLangData(block) {
-    var outer = block.parentElement.parentElement.parentElement;
-    var lang = block.getAttribute('data-lang');
-    for (var i = 0; i < outer.classList.length; i++) {
-      var cls = outer.classList[i];
-      if (cls.startsWith('language-')) {
-        lang = cls;
-        break;
-      }
-    }
-    if (!lang) {
-      cls = block.getAttribute('class');
-      lang = cls ? cls.replace('hljs ', '') : '';
-    }
-    if (lang.startsWith('language-')) {
-      lang = lang.substr(9);
-    }
-    block.setAttribute('class', 'hljs ' + lang);
-    block.parentNode.setAttribute('data-lang', lang);
-  }
-
-  function addBadge(block) {
-    var enabled = ('true' || 'true').toLowerCase();
-    if (enabled == 'true') {
-      var pre = block.parentElement;
-      pre.classList.add('badge');
-    }
-  }
-
-  function handle(block) {
-    addLangData(block);
-    addBadge(block)
-    hljs.highlightBlock(block);
-  }
-
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i];
-    handle(el);
-  }
-});
-</script>
-
-<style>
-  /* code language badge */
-  pre.badge::before {
-    content: attr(data-lang);
-    color: #fff;
-    background-color: #ff4e00;
-    padding: 0 .5em;
-    border-radius: 0 2px;
-    text-transform: uppercase;
-    text-align: center;
-    min-width: 32px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-  }
-
-  /* fix wrong badge display for firefox browser */
-  code > table pre::before {
-    display: none;
-  }
-</style>
-<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css" rel="stylesheet">
-<style>
-  .pswp .pswp__container .pswp__img {
-    background-color: white;
-  }
-</style>
-
-<script>
-  function initPhotoSwipe() {
-    var mainEl = document.querySelector("section.main");
-
-    var imgEls = mainEl.querySelectorAll("img:not(.emoji)");
-    imgEls.forEach((imgEl) => {
-      imgEl.outerHTML = `
-    <a class="photo-swipe"
-      href="${imgEl.src}"
-      data-width="${imgEl.getAttribute("width") || imgEl.width * 2}"
-      data-height="${imgEl.getAttribute("height") || imgEl.height * 2}"
-      data-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
-      target="_blank">
-      ${imgEl.outerHTML}
-    </a>`;
-    });
-
-    // Init empty gallery array
-    var container = [];
-
-    // Loop over gallery items and push it to the array
-    var linkEls = mainEl.querySelectorAll("a.photo-swipe");
-    linkEls.forEach((link) => {
-      var item = {
-        src: link.getAttribute("href"),
-        w: link.dataset.width,
-        h: link.dataset.height,
-        title: link.dataset.caption || "",
-      };
-      container.push(item);
-    });
-
-    // Define click event on gallery item
-    linkEls.forEach((link, index) => {
-      link.addEventListener("click", (event) => {
-        // Prevent location change
-        event.preventDefault();
-
-        // Define object and gallery options
-        var pswp = document.querySelector(".pswp");
-
-        var zoomLevel = 1;
-
-        // Define object and gallery options
-        var options = {
-          index: index,
-          bgOpacity: 0.85,
-          showHideOpacity: true,
-          closeOnScroll: true,
-          maxSpreadZoom: 1,
-          getDoubleTapZoom: (isMouseClick, item) => {
-            if (item.detail) {
-              zoomLevel += item.detail.origEvent.shiftKey ? -1 : 1;
-              item.detail = undefined;
-            } else {
-              zoomLevel = zoomLevel === 1 ? 2 : 1;
-            }
-            if (zoomLevel <= 1) {
-              zoomLevel = 1;
-              setTimeout(() => pswp.classList.remove("pswp--zoomed-in"), 0);
-            }
-            return item.initialZoomLevel * zoomLevel;
-          },
-        };
-
-        // Initialize PhotoSwipe
-        var gallery = new PhotoSwipe(
-          pswp,
-          PhotoSwipeUI_Default,
-          container,
-          options
-        );
-
-        gallery.init();
-
-        // Custom zoom event
-        gallery.container.addEventListener("pswpTap", (e) => {
-          gallery.currItem.detail = e.detail;
-        });
-      });
-    });
-  }
-
-  window.addEventListener("load", initPhotoSwipe);
-</script>
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i" rel="stylesheet">
 </head>
+
 <body>
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-  <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-  <div class="pswp__bg"></div>
-  <!-- Slides wrapper with overflow:hidden. -->
-  <div class="pswp__scroll-wrap">
-    <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-    <div class="pswp__ui pswp__ui--hidden">
-      <div class="pswp__top-bar">
-        <!--  Controls are self-explanatory. Order can be changed. -->
-        <div class="pswp__counter"></div>
-        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        <button class="pswp__button pswp__button--share" title="Share"></button>
-        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-        <!-- element will get class pswp__preloader--active when preloader is running -->
-        <div class="pswp__preloader">
-          <div class="pswp__preloader__icn">
-            <div class="pswp__preloader__cut">
-              <div class="pswp__preloader__donut"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-        <div class="pswp__share-tooltip"></div>
-      </div>
-      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-      <div class="pswp__caption">
-        <div class="pswp__caption__center"></div>
-      </div>
-    </div>
+  <div class="content">
+
+    <header class="header">
+
+  <div class="header_content">
+    <label class="theme_changer">
+      <input theme_toggle type="checkbox">
+      <div class="button"></div>
+    </label>
+    <a class="header_circle" href="/">
+      <img src="/assets/img/main_icon.png" alt="catbook">
+    </a>
+    <span class="header_name"></span>
+    <span class="header_job">nwgu99@gmail.com</span>
+    <span class="header_mes"></span>
+
+    <nav class="nav">
+      
+      
+      
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="/categories/history" id="aa">history
+            (15)</a>
+        </li>
+      </ul>
+      
+      
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="/categories/dev" id="aa">dev
+            (3)</a>
+        </li>
+      </ul>
+      
+    </nav>
   </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="site-header " role="banner">
-
-  <div class="wrapper">
-    <div class="site-header-inner">
-<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
-  <img class="site-favicon" title="구트리" src="" onerror="this.style.display='none'">
-  구트리
-</a>
-</span><nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger">
-          <label for="nav-trigger">
-            <span class="menu-icon">
-              <svg viewbox="0 0 18 15" width="18px" height="15px">
-                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
-              </svg>
-            </span>
-          </label>
-
-          <div class="trigger">
-<a class="page-link" href="/about.html">ABOUT</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
-
-
-
-
-
-
-
-
-
-<span class="page-link">
-
-
-
-<div id="google_translate_element" style="display: none;">
-</div>
-
-<span class="ct-language">
-  <ul class="list-unstyled ct-language-dropdown">
-    
-      <li>
-        <a href="#" class="lang-select" data-lang="ko">
-          
-          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
-          
-        </a>
-      </li>
-    
-  </ul>
-</span>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'ko',
-    autoDisplay: false,
-    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
-  }, 'google_translate_element');
-
-  // Links to cross-origin destinations are unsafe
-  var gll = document.getElementsByClassName('goog-logo-link')[0];
-  if (gll) {
-    gll.setAttribute('rel', 'noopener');
-  }
-
-  function restoreLang() {
-    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
-    if (!iframe) return;
-
-    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    var restore_el = innerDoc.getElementsByTagName("button");
-
-    for (var i = 0; i < restore_el.length; i++) {
-      if (restore_el[i].id.indexOf("restore") >= 0) {
-        restore_el[i].click();
-        var close_el = innerDoc.getElementsByClassName("goog-close-link");
-        close_el[0].click();
-        return;
-      }
-    }
-  }
-
-  function triggerHtmlEvent(element, eventName) {
-    var event;
-    if (document.createEvent) {
-      event = document.createEvent('HTMLEvents');
-      event.initEvent(eventName, true, true);
-      element.dispatchEvent(event);
-    } else {
-      event = document.createEventObject();
-      event.eventType = eventName;
-      element.fireEvent('on' + event.eventType, event);
-    }
-  }
-
-  var googleCombo = document.querySelector("select.goog-te-combo");
-  var langSelect = document.querySelector('.ct-language');
-  langSelect.addEventListener('click', function(event) {
-    if (!event.target) {
-      return;
-    }
-
-    var selected = document.querySelector('.ct-language .ct-language-selected');
-    if (selected) {
-      selected.classList.remove('ct-language-selected');
-    }
-
-    var target = event.target;
-    while (target && target !== langSelect ) {
-      if (target.matches('.lang-select')) {
-        break;
-      }
-      target = target.parentElement;
-    }
-
-    if (target && target.matches('.lang-select')) {
-      var lang = target.getAttribute('data-lang');
-      if (googleCombo.value == lang) {
-        restoreLang();
-      } else {
-        target.parentElement.classList.add('ct-language-selected');
-        googleCombo.value = lang;
-        triggerHtmlEvent(googleCombo, 'change');
-      }
-    }
-
-    event.preventDefault();
-  });
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</span>
-</div>
-        </nav>
-</div>
-  </div>
 </header>
 
-<script>
-  function initHeader() {
-    var lastScrollY = getScrollPos().y;
-    var documentElement = document.documentElement;
 
-    function storeScrollData() {
-      var y = getScrollPos().y;var scrollStatus = "";
 
-      if (y <= 0) {
-        scrollStatus = "top";
-      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
-        scrollStatus = "bottom";
-      } else {
-        var isScrollDown = (y - lastScrollY > 0) ? true : false;
-        scrollStatus = isScrollDown ? "down" : "up";
-      }
+    <nav class="mobile_menu">
 
-      lastScrollY = y;
-      documentElement.setAttribute("data-scroll-status", scrollStatus);
-    }
-
-    window.addEventListener('scroll', function(e) {
-      storeScrollData();
-    });
-
-    storeScrollData();
-  }
-  document.addEventListener('DOMContentLoaded', initHeader);
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  function hashLocate(hashValue) {
-    hashValue = hashValue.replace(/^.*#h-/, '');
-    hashValue = decodeURIComponent(hashValue);
-    var element = document.getElementById(hashValue);
-
-    if (!element) {
-      return;
-    }
-
-    var header = document.querySelector('header.site-header');
-    var headerRect = header.getBoundingClientRect();
-    var headerTop = Math.floor(headerRect.top);
-    var headerHeight = Math.floor(headerRect.height);
-    var scrollPos = getScrollPos();
-    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
-
-    if (offsetY == scrollPos.y) {
-      return;
-    }
-
-    if (headerTop == 0  && offsetY > scrollPos.y) {
-      offsetY += headerHeight + 2;
-    } else if (headerTop < 0  && offsetY < scrollPos.y) {
-      offsetY -= headerHeight - 2;
-    }
-
-    smoothScrollTo(offsetY);
-  }
-
-  // The first event occurred
-  window.addEventListener('load', function(event) {
-    if (window.location.hash) {
-      hashLocate(window.location.hash);
-    }
-  });
-
-  // The first event occurred
-  window.addEventListener('click', function(event) {
-    if (event.target.tagName.toLowerCase() == 'a') {
-      hashLocate(event.target.getAttribute('href'));
-    }
-  });
-</script>
-<div class="theme-toggle">
-  <input type="checkbox" id="theme-switch">
-  <label for="theme-switch">
-    <div class="toggle"></div>
-    <div class="names">
-      <p class="light">Light</p>
-      <p class="dark">Dark</p>
-    </div>
-  </label>
-</div>
-
-
-
-
-<script>
-  (function() {
-    var sw = document.getElementById('theme-switch');
-    var html = document.getElementsByTagName('html')[0];
-    var nightModeOption = ('on' || 'auto').toLowerCase();
-    var storage = nightModeOption === 'manual'
-        ? localStorage
-        : sessionStorage;
-    var themeData = loadThemeData();
-
-    function saveThemeData(data) {
-      storage.setItem('theme', JSON.stringify(data));
-    }
-
-    function loadThemeData() {
-      var data = storage.getItem('theme');
-      try {
-        data = JSON.parse(data ? data : '');
-      } catch(e) {
-        data = { nightShift: undefined, autoToggleAt: 0 };
-        saveThemeData(data);
-      }
-      return data;
-    }
-
-    function handleThemeToggle(nightShift) {
-      themeData.nightShift = nightShift;
-      saveThemeData(themeData);
-      html.dataset.theme = nightShift ? 'dark' : 'light';
-      setTimeout(function() {
-        sw.checked = nightShift ? true : false;
-      }, 50);
-    }
-
-    function autoThemeToggle() {
-      // Next time point of theme toggle
-      var now = new Date();
-      var toggleAt = new Date();
-      var hours = now.getHours();
-      var nightShift = hours >= 19 || hours <=7;
-
-      if (nightShift) {
-        if (hours > 7) {
-          toggleAt.setDate(toggleAt.getDate() + 1);
-        }
-        toggleAt.setHours(7);
-      } else {
-        toggleAt.setHours(19);
-      }
-
-      toggleAt.setMinutes(0);
-      toggleAt.setSeconds(0);
-      toggleAt.setMilliseconds(0)
-
-      var delay = toggleAt.getTime() - now.getTime();
-
-      // auto toggle theme mode
-      setTimeout(function() {
-        handleThemeToggle(!nightShift);
-      }, delay);
-
-      return {
-        nightShift: nightShift,
-        toggleAt: toggleAt.getTime()
-      };
-    }
-
-    // Listen the theme toggle event
-    sw.addEventListener('change', function(event) {
-      handleThemeToggle(event.target.checked);
-    });
-
-    if (nightModeOption == 'auto') {
-      var data = autoThemeToggle();
-
-      // Toggle theme by local setting
-      if (data.toggleAt > themeData.autoToggleAt) {
-        themeData.autoToggleAt = data.toggleAt;
-        handleThemeToggle(data.nightShift);
-      } else {
-        handleThemeToggle(themeData.nightShift);
-      }
-    } else if (nightModeOption == 'manual') {
-      handleThemeToggle(themeData.nightShift);
-    } else {
-      var nightShift = themeData.nightShift;
-      if (nightShift === undefined) {
-        nightShift = nightModeOption === 'on';
-      }
-      handleThemeToggle(nightShift);
-    }
-  })();
-</script>
-<div id="click-to-top" class="click-to-top">
-  <i class="fa fa-arrow-up"></i>
-</div>
-<script>
-  (function () {
-    const clickToTop = document.getElementById('click-to-top');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        clickToTop.classList.add('show')
-      }else {
-        clickToTop.classList.remove('show')
-      }
-    });
-    clickToTop.addEventListener('click', () => {
-      window.smoothScrollTo(0);
-    });
-  })();
-</script>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="framework">
-  <section class="main">
-
-     <div class="post">
-  <section>
-
-
-
-
-
-
-
-
-
-<header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">Another test markdown</h1>
-  <h2 class="post-subtitle">Each post also has a subtitle</h2>
-
-  <p class="post-meta">
-    <time class="dt-published" datetime="" itemprop="datePublished"><i class="fa fa-calendar"></i> 
-    </time>
-
+  <ul class="nav_list">
+    
     
     
 
+    <li class="nav_item">
+      <a href="/categories/history" id="aa">history (15)</a>
+    </li>
+    
+    
 
+    <li class="nav_item">
+      <a href="/categories/dev" id="aa">dev (3)</a>
+    </li>
+    
+  </ul>
 
+</nav>
+    
+    <main class="main">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 27 mins</span>
-  </p>
-<div class="post-tags"><a class="post-tag" href="/tags.html#test">#test</a></div></header>
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="post-content e-content" itemprop="articleBody">
-
-      <p>Put the math expression within <span>$</span>…$:</p>
+    <div class="post">
+  <div>
+    
+    <p class="post_title">Another test markdown</p>
+    
+  </div>
+  <div class="post_data">
+    
+    
+    <span class="post_categories">
+      &raquo; 
+      <a href="/categories/markdown">markdown</a>
+    </span>
+    
+  </div>
+  <div class="post_content">
+    <p>Put the math expression within <span>$</span>…$:</p>
 
 <p>\(\LaTeX{}\)</p>
 
@@ -944,12 +120,10 @@ function googleTranslateElementInit() {
 
 <p>\( \int_a^b f(x)\,dx. \)</p>
 
-<p>$$
-\begin{cases}
-\text{if true}\ foo <br>
+\[\begin{cases}
+\text{if true}\ foo \\
 \text{if false}\ bar
-\end{cases}
-$$</p>
+\end{cases}\]
 
 <table>
   <tbody>
@@ -961,32 +135,24 @@ $$</p>
   </tbody>
 </table>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )</td>
-      <td>\phi _i^\sigma ({\bf{r}})</td>
-      <td>^2} $$</td>
-    </tr>
-  </tbody>
-</table>
+\[\rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2}\]
 
 <p>Here is a liquid filter.</p>
 
-<p>`escape inline code`<br>
-<code class="language-plaintext highlighter-rouge">inline code</code><br>
+<p>`escape inline code`<br />
+<code class="language-plaintext highlighter-rouge">inline code</code><br />
 Here is a <strong>capture block</strong>.</p>
 
 <p>100 / 3 = 33</p>
 
-<p><img class="emoji" title=":+1:" alt=":+1:" raw="👍" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" style="vertical-align: middle; display: inline; max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.getAttribute('raw'))"><img class="emoji" title=":bolivia:" alt=":bolivia:" raw="🇧🇴" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1e7-1f1f4.png" style="vertical-align: middle; display: inline; max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.getAttribute('raw'))"></p>
+<p>:+1:
+:bolivia:</p>
 
-<p>⁣1. 21312<br>
-⁣2. 21312<br>
-⁣4. 4214</p>
+<p>\1. 21312<br />
+\2. 21312<br />
+\4. 4214</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
-<td class="gutter gl"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1024,8 +190,7 @@ Here is a <strong>capture block</strong>.</p>
 36
 37
 38
-</pre></td>
-<td class="code"><pre><span class="kn">import</span> <span class="n">networkx</span> <span class="k">as</span> <span class="n">nx</span>
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="n">networkx</span> <span class="k">as</span> <span class="n">nx</span>
 <span class="kn">from</span> <span class="n">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
 
 <span class="n">diagrams</span> <span class="o">=</span> <span class="nf">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -1063,8 +228,7 @@ Here is a <strong>capture block</strong>.</p>
         <span class="n">idx</span> <span class="o">=</span> <span class="n">diagrams</span><span class="p">[</span><span class="n">key</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
     <span class="n">cna_signature</span> <span class="o">=</span> <span class="n">key</span> <span class="o">+</span> <span class="p">(</span><span class="n">idx</span><span class="p">,)</span>
     <span class="n">particle_counts</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="nf">update</span><span class="p">([</span><span class="n">cna_signature</span><span class="p">])</span>
-</pre></td>
-</tr></tbody></table></code></pre></figure>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">insert</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">key</span> <span class="o">==</span> <span class="sc">'\0'</span><span class="p">)</span> <span class="p">{</span>
@@ -1095,34 +259,26 @@ Here is a <strong>capture block</strong>.</p>
 <table>
   <thead>
     <tr>
-      <th style="text-align: left" rowspan="2">
-<br>
-Method</th>
-      <th style="text-align: center" rowspan="2">
-<br>
-\(\lambda^a\)</th>
-      <th colspan="3" style="text-align: center">\[O_3 + C_2H_2 \rightarrow\]
-</th>
-      <th colspan="3" style="text-align: center">\[O_3 + C_2H_4 \rightarrow\]
-</th>
-      <th style="text-align: center" rowspan="2">
-<br>
-MAE</th>
-      
-      
-      
-      
+      <th>:</th>
+      <th>:                  :</th>
+      <th>: \(O_3 + C_2H_2 \rightarrow\)         :</th>
+      <th> </th>
+      <th> </th>
+      <th>:  \(O_3 + C_2H_4 \rightarrow\) :</th>
+      <th> </th>
+      <th> </th>
+      <th>:       :</th>
     </tr>
     <tr>
-      
-      
+      <th>:  ^^ Method            :</th>
+      <th>^^ \(\lambda^a\)</th>
       <th>vdW</th>
       <th>TS</th>
       <th>cycloadd.</th>
       <th>vdW</th>
       <th>TS</th>
       <th>cycloadd.</th>
-      
+      <th>^^ MAE</th>
     </tr>
   </thead>
   <tbody>
@@ -1166,15 +322,15 @@ MAE</th>
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="8">\(^a\) The optimal mixing parameter.\(~\) \(^b\) From Ref. .\(~\)  \(^c\) Best estimates from Ref. .</td>
+      <td>\(^a\) The optimal mixing parameter.\(\~\) \(^b\) From Ref. .\(\~\)  \(^c\) Best estimates from Ref. .</td>
       <td> </td>
-      
-      
-      
-      
-      
-      
-      
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
   </tfoot>
 </table>
@@ -1191,32 +347,30 @@ MAE</th>
       <td>7</td>
     </tr>
     <tr>
-      <td colspan="2" rowspan="2">spancell1
-<br>
-spancell1</td>
-      <td colspan="2">spancell2</td>
+      <td>spancell1</td>
+      <td> </td>
+      <td>spancell2</td>
+      <td> </td>
       <td>cell</td>
-      <td colspan="2">spancell3</td>
-      
-      
-      
+      <td>spancell3</td>
+      <td> </td>
     </tr>
     <tr>
-      
-      <td colspan="2">spancell2</td>
+      <td>^^ spancell1</td>
+      <td> </td>
+      <td>spancell2</td>
+      <td> </td>
       <td>cell</td>
-      <td colspan="2">spancell3</td>
-      
-      
-      
+      <td>spancell3</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
 
 <script>
 |:-----:|:-----:|:-----:|:-----:|
-| \(0,0) | \(0,1) | \(0,2) | \(0,3) |
-|     \(1,0)    \|| ^^    | \(1,3) |
+| (0,0) | (0,1) | (0,2) | (0,3) |
+|     (1,0)    || ^^    | (1,3) |
 </script>
 
 <table>
@@ -1224,18 +378,16 @@ spancell1</td>
     <tr>
       <td>(0,0)</td>
       <td>(0,1)</td>
-      <td rowspan="2">(0,2)
-<br>
-</td>
+      <td>(0,2)</td>
       <td>(0,3)</td>
       <td> </td>
     </tr>
     <tr>
-      <td colspan="2">(1,0)</td>
-      
+      <td>(1,0)</td>
+      <td> </td>
+      <td>^^</td>
       <td>(1,3)</td>
       <td> </td>
-      
     </tr>
   </tbody>
 </table>
@@ -1250,11 +402,11 @@ spancell1</td>
       <td> </td>
     </tr>
     <tr>
-      <td colspan="3">(1,0)</td>
-      <td colspan="2">(1,3)</td>
-      
-      
-      
+      <td>(1,0)</td>
+      <td> </td>
+      <td> </td>
+      <td>(1,3)</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
@@ -1265,17 +417,15 @@ spancell1</td>
       <td>(0,0)</td>
       <td>(0,1)</td>
       <td>(0,2)</td>
-      <td rowspan="2">(0,3)
-<br>
-</td>
+      <td>(0,3)</td>
       <td> </td>
     </tr>
     <tr>
-      <td colspan="3">(1,0)</td>
-      
+      <td>(1,0)</td>
       <td> </td>
-      
-      
+      <td> </td>
+      <td>^^</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
@@ -1283,23 +433,19 @@ spancell1</td>
 <table>
   <tbody>
     <tr>
-      <td>(0,0)
-<br>
-(1,0)</td>
-      <td>(0,1)
-<br>
-</td>
-      <td>(0,2)
-<br>
- </td>
-      <td rowspan="2">(0,3)
-<br><br>
- </td>
-      <td>
-<br>
- </td>
+      <td>(0,0)</td>
+      <td>(0,1)</td>
+      <td>(0,2)</td>
+      <td>(0,3)</td>
+      <td>\</td>
     </tr>
-    
+    <tr>
+      <td>(1,0)</td>
+      <td> </td>
+      <td> </td>
+      <td>^^</td>
+      <td> </td>
+    </tr>
   </tbody>
 </table>
 
@@ -1315,14 +461,12 @@ spancell1</td>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: right" rowspan="2">Glycolysis
-<br>
-</td>
-      <td style="text-align: right" colspan="2">2 ATP</td>
-      
+      <td style="text-align: right">Glycolysis</td>
+      <td style="text-align: right">2 ATP</td>
+      <td style="text-align: right"> </td>
     </tr>
     <tr>
-      
+      <td style="text-align: right">^^</td>
       <td style="text-align: right">2 NADH</td>
       <td style="text-align: right">3–5 ATP</td>
     </tr>
@@ -1332,26 +476,24 @@ spancell1</td>
       <td style="text-align: right">5 ATP</td>
     </tr>
     <tr>
-      <td style="text-align: right" rowspan="3">Citric acid cycle
-<br><br>
-</td>
-      <td style="text-align: right" colspan="2">2 ATP</td>
-      
+      <td style="text-align: right">Citric acid cycle</td>
+      <td style="text-align: right">2 ATP</td>
+      <td style="text-align: right"> </td>
     </tr>
     <tr>
-      
+      <td style="text-align: right">^^</td>
       <td style="text-align: right">6 NADH</td>
       <td style="text-align: right">15 ATP</td>
     </tr>
     <tr>
-      
+      <td style="text-align: right">^^</td>
       <td style="text-align: right">2 FADH</td>
       <td style="text-align: right">3 ATP</td>
     </tr>
     <tr>
-      <td style="text-align: right" colspan="3">30–32 ATP</td>
-      
-      
+      <td style="text-align: right">30–32 ATP</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
     </tr>
   </tbody>
 </table>
@@ -1359,36 +501,42 @@ spancell1</td>
 <table>
   <thead>
     <tr>
-      <th colspan="4" style="text-align: center">Here’s a Inline Attribute Lists example</th>
-      
+      <th>:             Here’s a Inline Attribute Lists example                 :</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center" rowspan="5">
-<br><br>
-IALs
-<br><br>
-</td>
-      <td colspan="3" style="text-align: center">
-<div style="color: red;"> &lt; Normal HTML Block &gt; </div>
-</td>
+      <td>:       :</td>
+      <td>:  &lt;div style="color: red;"&gt; &lt; Normal HTML Block &gt; &lt;/div&gt; :</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
-      
-      <td colspan="3" class="cls" style="background: orange">Red    </td>
+      <td>^^</td>
+      <td>Red    {: .cls style=”background: orange” }</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
-      
-      <td colspan="3" id="id" style="background: green; color: white">Green  </td>
+      <td>^^ IALs</td>
+      <td>Green  {: #id style=”background: green; color: white” }</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
-      
-      <td colspan="3" style="background: blue; color: white">Blue   </td>
+      <td>^^</td>
+      <td>Blue   {: style=”background: blue; color: white” }</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
-      
-      <td colspan="3" style="background: black;color: white;font-weight: 900; text-decoration: underline;">Black  </td>
+      <td>^^</td>
+      <td>Black  {: color-style font-style}</td>
+      <td> </td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
@@ -1404,7 +552,7 @@ IALs
   <tbody>
     <tr>
       <td>Row 1</td>
-      <td>Apple<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>(Footnote)</td>
+      <td>Apple<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></td>
       <td><a href="https://www.youtube.com">Youtube (Home)</a></td>
     </tr>
     <tr>
@@ -1413,40 +561,29 @@ IALs
       <td><a href="https://www.github.com">Github</a></td>
     </tr>
     <tr>
-      <td rowspan="2">Row 3 (merged)
-<br>
-</td>
+      <td>Row 3 (merged)</td>
       <td>Blueberry</td>
-      <td>
-<a href="https://www.google.com">Google</a> *****  <a href="https://www.github.com">Github</a>
-</td>
+      <td><a href="https://www.google.com">Google</a> *****  <a href="https://www.github.com">Github</a></td>
     </tr>
     <tr>
-      
+      <td>^^</td>
       <td><a href="https://example.com">Plum</a></td>
-      <td>Raspberry <img src="https://jekyllrb.com/img/octojekyll.png" alt="example" title="An exemplary image">
-</td>
+      <td>Raspberry <img src="https://jekyllrb.com/img/octojekyll.png" alt="example" title="An exemplary image" /></td>
     </tr>
     <tr>
-      <td rowspan="2">Row 4
-<br>
-</td>
-      <td rowspan="2">
-<a href="https://www.google.com">https://www.google.com</a>
-<br>
-<a href="https://www.youtube.com">https://www.youtube.com</a>
-</td>
+      <td>Row 4</td>
+      <td><a href="https://www.google.com">https://www.google.com</a></td>
       <td><a href="https://www.google.com" target="_blank">test</a></td>
     </tr>
     <tr>
-      
-      
+      <td>^^</td>
+      <td>^^ <a href="https://www.youtube.com">https://www.youtube.com</a></td>
       <td> </td>
     </tr>
     <tr>
       <td>Row 5</td>
-      <td colspan="2"><a href="https://www.google.com">https://www.google.com</a></td>
-      
+      <td><a href="https://www.google.com">https://www.google.com</a></td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
@@ -1504,7 +641,7 @@ IALs
 </table>
 
 <h2 id="emoji">Emoji</h2>
-<p><img class="emoji" title=":+1:" alt=":+1:" raw="👍" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" style="vertical-align: middle; display: inline; max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.getAttribute('raw'))"></p>
+<p>:+1:</p>
 
 <h2 id="mathjax">Mathjax</h2>
 
@@ -1512,19 +649,26 @@ IALs
 
 <h2 id="plantuml">PlantUML</h2>
 
-<p><img class="plantuml" src="http://www.plantuml.com/plantuml/svg/~h407374617274756d6c0a426f62202d3e20416c696365203a2068656c6c6f0a40656e64756d6c"></p>
+<p>@startuml
+Bob -&gt; Alice : hello
+@enduml</p>
 
 <h2 id="mermaid">Mermaid</h2>
 
-<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcbmNvbmN1cnJlbnQuZnV0dXJlcyAtLS0-fCBvbiB0b3Agb2YgfCB0aHJlYWRpbmdcbmNvbmN1cnJlbnQuZnV0dXJlcyAtLS0-fCBvbiB0b3Agb2YgfCBtdWx0aXByb2Nlc3NpbmdcbnRocmVhZGluZyAtLS0-fCBvbiB0b3Agb2YgfCBcXF90aHJlYWRcbmNsaWNrIGNvbmN1cnJlbnQuZnV0dXJlcyBcImh0dHBzOi8vZG9jcy5weXRob24ub3JnLzMuOS9saWJyYXJ5L2NvbmN1cnJlbnQuZnV0dXJlcy5odG1sXCIgX2JsYW5rIiwibWVybWFpZCI6bnVsbH0"></p>
+<pre><code class="language-mermaid!">graph LR
+  concurrent.futures ---&gt;| on top of | threading
+  concurrent.futures ---&gt;| on top of | multiprocessing
+  threading ---&gt;| on top of | \_thread
+  click concurrent.futures "https://docs.python.org/3.9/library/concurrent.futures.html" _blank
+</code></pre>
 
 <h2 id="video">Video</h2>
 
-<p><video id="media-flower.webm" class="media" style="max-width: 600px;outline: none" controls> <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"> Your browser doesn't support HTML5 video. Here is a <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">link to download the video</a> instead.</source></video></p>
+<p><img src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" alt="Flower" /></p>
 
-<p><iframe id="media-Ptk_1Dc2iPY" class="media" src="https://www.youtube.com/embed/Ptk_1Dc2iPY" title="" width="100%" height="350" style="max-width: 600px;outline: none" allow="encrypted-media; picture-in-picture" frameborder="0" allowfullscreen></iframe></p>
+<p><img src="//www.youtube.com/watch?v=Ptk_1Dc2iPY" alt="" /></p>
 
-<p><img src="https://avatars3.githubusercontent.com/hubot?v=3&s=40" alt=""></p>
+<p><img src="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=40" alt="" /></p>
 
 <p><a href="//www.youtube.com/watch?v=Ptk_1Dc2iPY">[video link]</a></p>
 
@@ -1534,45 +678,45 @@ IALs
 
 <p>Opus Audio (“.opus”):</p>
 
-<p><img src="https://hpr.dogphilosophy.net/test/opus.opus" alt=""></p>
+<p><img src="https://hpr.dogphilosophy.net/test/opus.opus" alt="" /></p>
 
 <p>“MP3” file (“.mp3”) :</p>
 
-<p><audio id="media-mp3.mp3" class="media" src="https://hpr.dogphilosophy.net/test/mp3.mp3" style="max-width: 600px;outline: none" controls> Your browser doesn't support HTML5 audio. Here is a <a href="https://hpr.dogphilosophy.net/test/mp3.mp3">link to download the audio</a> instead.</audio></p>
+<p><img src="https://hpr.dogphilosophy.net/test/mp3.mp3" alt="" /></p>
 
 <p>WebM Audio (“.weba”):</p>
 
-<p><img src="https://hpr.dogphilosophy.net/test/weba.weba" alt=""></p>
+<p><img src="https://hpr.dogphilosophy.net/test/weba.weba" alt="" /></p>
 
 <p>WebMv2 Audio (“.webm”):</p>
 
-<p><video id="media-webmv2.webm" class="media" style="max-width: 600px;outline: none" controls> <source src="https://hpr.dogphilosophy.net/test/webmv2.webm"> Your browser doesn't support HTML5 video. Here is a <a href="https://hpr.dogphilosophy.net/test/webmv2.webm">link to download the video</a> instead.</source></video></p>
+<p><img src="https://hpr.dogphilosophy.net/test/webmv2.webm" alt="" /></p>
 
 <p>Ogg Vorbis (“.ogg”) :</p>
 
-<p><audio id="media-ogg.ogg" class="media" src="https://hpr.dogphilosophy.net/test/ogg.ogg" style="max-width: 600px;outline: none" controls> Your browser doesn't support HTML5 audio. Here is a <a href="https://hpr.dogphilosophy.net/test/ogg.ogg">link to download the audio</a> instead.</audio></p>
+<p><img src="https://hpr.dogphilosophy.net/test/ogg.ogg" alt="" /></p>
 
 <p>“wave” file(“.wav”) :</p>
 
-<p><audio id="media-wav.wav" class="media" src="https://hpr.dogphilosophy.net/test/wav.wav" style="max-width: 600px;outline: none" controls> Your browser doesn't support HTML5 audio. Here is a <a href="https://hpr.dogphilosophy.net/test/wav.wav">link to download the audio</a> instead.</audio></p>
+<p><img src="https://hpr.dogphilosophy.net/test/wav.wav" alt="" /></p>
 
 <p>FLAC file (“.flac”) :</p>
 
-<p><img src="https://hpr.dogphilosophy.net/test/flac.flac" alt=""></p>
+<p><img src="https://hpr.dogphilosophy.net/test/flac.flac" alt="" /></p>
 
 <p>CAF file (“.caf”) :</p>
 
-<p><img src="https://hpr.dogphilosophy.net/test/cafopus.caf" alt=""></p>
+<p><img src="https://hpr.dogphilosophy.net/test/cafopus.caf" alt="" /></p>
 
 <p>Spotify Podcast:</p>
 
-<p><iframe id="media-31AxcwYdjsFtStds5JVWbT" class="media" src="https://open.spotify.com/embed/episode/31AxcwYdjsFtStds5JVWbT" title="" width="100%" height="152" style="max-width: 600px;outline: none" allow="encrypted-media; picture-in-picture" frameborder="0" allowfullscreen></iframe></p>
+<p><img src="https://open.spotify.com/episode/31AxcwYdjsFtStds5JVWbT" alt="" /></p>
 
 <h2 id="special-media-links">Special media links</h2>
 
-<p><video id="media-devstories.webm" class="media" style="max-width: 600px;outline: none" controls> <source src="/assets/devstories.webm"> Your browser doesn't support HTML5 video. Here is a <a href="/assets/devstories.webm">link to download the video</a> instead.</source></video></p>
+<p><img src="/assets/devstories.webm" alt="" /></p>
 
-<p><a href="https://www.youtube.com/watch?v=kCHGDRHZ4eU"><img src="https://i.imgur.com/bc9HOJU.png" alt="w:1100"></a></p>
+<p><a href="https://www.youtube.com/watch?v=kCHGDRHZ4eU"><img src="https://i.imgur.com/bc9HOJU.png" alt="w:1100" /></a></p>
 
 <p>Tips:</p>
 <ul>
@@ -1584,10 +728,8 @@ The two markdown examples below both create this table.</li>
 <table>
   <tbody>
     <tr>
-      <td>Use pipes <code class="language-plaintext highlighter-rouge">(</code>
-</td>
-      <td>
-<code class="language-plaintext highlighter-rouge">)</code> to delineate columns, and dashes to delineate the header row from the rest of the table.</td>
+      <td>Use pipes <code class="language-plaintext highlighter-rouge">(</code></td>
+      <td><code class="language-plaintext highlighter-rouge">)</code> to delineate columns, and dashes to delineate the header row from the rest of the table.</td>
     </tr>
   </tbody>
 </table>
@@ -1595,169 +737,103 @@ The two markdown examples below both create this table.</li>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p>Footnote <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+      <p>Footnote <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
+  </div>
 
-    </div>
 
-</article>
-<div class="post-nav">
-<span></span><span></span>
-</div>
-<div class="post-related">
-      <div>Related Articles</div>
-      <ul>
-        </ul>
-    </div>
-<div class="post-comments"></div></section>
+  
+
 </div>
 
 
-  </section>
-  <section class="sidebar" style="margin-left: 15px;">
-    <!-- Get sidebar items --><style type="text/css" media="screen">
-.post-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-</style>
+    </main>
 
-<div class="post-menu">
-  <div class="post-menu-title">TOC</div>
-  <div class="post-menu-content"></div>
-</div>
+  </div>
 
-<script>
-  function generateContent() {
-    var menu = document.querySelector(".post-menu");
-    var menuContent =  menu.querySelector(".post-menu-content");
-    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
-
-    // Hide menu when no headings
-    if (headings.length === 0) {
-      return menu.style.display = "none";
-    }
-
-    // Generate post menu
-    var menuHTML = '';
-    for (var i = 0; i < headings.length; i++) {
-      var h = headings[i];
-      menuHTML += (
-        '<li class="h-' + h.tagName.toLowerCase() + '">'
-        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
-    }
-
-    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
-
-    // The header element
-    var header = document.querySelector('header.site-header');
-
-    function doMenuCollapse(index, over_items) {
-      var items = menuContent.firstChild.children;
-
-      if (over_items == undefined) {
-        over_items = 20;
-      }
-
-      if (items.length < over_items) {
-        return;
-      }
-
-      var activeItem = items[index];
-      var beginItem = activeItem
-      var endItem = activeItem
-      var beginIndex = index;
-      var endIndex = index + 1;
-      while (beginIndex >= 0
-        && !items[beginIndex].classList.contains('h-h2')) {
-        beginIndex -= 1;
-      }
-      while (endIndex < items.length
-        && !items[endIndex].classList.contains('h-h2')) {
-        endIndex += 1;
-      }
-      for (var i = 0; i < beginIndex; i++) {
-        item = items[i]
-        if (!item.classList.contains('h-h2')) {
-          item.style.display = 'none';
-        }
-      }
-      for (var i = beginIndex + 1; i < endIndex; i++) {
-        item = items[i]
-        // if (!item.classList.contains('h-h2')) {
-          item.style.display = '';
-        // }
-      }
-      for (var i = endIndex; i < items.length; i++) {
-        item = items[i]
-        if (!item.classList.contains('h-h2')) {
-          item.style.display = 'none';
-        }
-      }
-    }
-
-    // Init menu collapsed
-    doMenuCollapse(-1);
-
-    // Active the menu item
-    window.addEventListener('scroll', function (event) {
-      var lastActive = menuContent.querySelector('.active');
-      var changed = true;
-      var activeIndex = -1;
-      for (var i = headings.length - 1; i >= 0; i--) {
-        var h = headings[i];
-        var headingRect = h.getBoundingClientRect();
-        var headerRect = header.getBoundingClientRect();
-        var headerTop = Math.floor(headerRect.top);
-        var headerHeight = Math.floor(headerRect.height);
-        var headerHeight = headerTop + headerHeight + 20;
-        if (headingRect.top <= headerHeight) {
-          var id = 'h-' + h.getAttribute('id');
-          var a = menuContent.querySelector('a[href="#' + id  + '"]');
-          var curActive = a.parentNode;
-          if (curActive) {
-            curActive.classList.add('active');
-            activeIndex = i;
-          }
-          if (lastActive == curActive) {
-            changed = false;
-          }
-          break;
-        }
-      }
-      if (changed) {
-        if (lastActive) {
-          lastActive.classList.remove('active');
-        }
-        doMenuCollapse(activeIndex);
-      }
-      event.preventDefault();
-    });
-  }
-  generateContent();
-</script>
-</section>
-</div>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-    <div class="site-footer-inner">
-<!--<div>Unpublished Work <span class="copyleft">&copy;</span> 2017-2024 nwgu</div>
-      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div>
-      -->
-    </div>
+  <footer class="footer">
+  <div>
+    &copy; 2024 .
+    Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.
+    Get this theme
+    <a href="https://github.com/starry99/catbook" target="_blank">here</a>.
   </div>
 </footer>
+
+  <!-- js from https://codepen.io/MrGrigri/pen/XQmWBv -->
+
+<script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+    const themePreference = () => {
+        const hasLocalStorage = localStorage.getItem('theme');
+        let supports = false;
+        let theme = undefined;
+
+        if (hasLocalStorage === 'light') {
+            theme = 'light';
+        }
+        if (hasLocalStorage === 'dark') {
+            theme = 'dark';
+        }
+
+        if (window.matchMedia(`(prefers_color: dark)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'dark';
+            supports = true;
+        };
+        if (window.matchMedia(`(prefers_color: light)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'light';
+            supports = true;
+        };
+        if (window.matchMedia(`(prefers_color: no-preference)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'none';
+            supports = true;
+        };
+
+        return {
+            supports,
+            theme
+        };
+    }
+
+    document.addEventListener('DOMContentLoaded', e => {
+        console.clear();
+
+        const userThemePreference = themePreference();
+        const toggle = document.querySelector('[theme_toggle]');
+        const html = document.documentElement;
+
+        const setTheme = () => {
+            switch (userThemePreference.theme) {
+                case 'dark':
+                    toggle.checked = true;
+                    html.classList.add('dark');
+                    html.classList.remove('light');
+                    break;
+                case 'light':
+                    toggle.checked = false;
+                    html.classList.remove('dark');
+                    html.classList.add('light');
+                    break;
+            }
+        }
+        setTheme();
+        toggle.addEventListener('click', e => {
+            if (toggle.checked) {
+                html.classList.add('dark');
+                html.classList.remove('light');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                html.classList.add('light');
+                localStorage.setItem('theme', 'light');
+            }
+        }, false);
+    }, false);
+// @license-end
+</script>
 
 </body>
 </html>

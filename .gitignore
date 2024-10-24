@@ -1,8 +1,2 @@
-*.gem
-_site/            # Jekyll이 빌드한 사이트 파일
-.sass-cache/      # Sass 캐시 파일
-.jekyll-cache/    # Jekyll 캐시 파일
-.jekyll-metadata  # Jekyll 메타데이터 파일
-.bundle/          # 번들러 관련 파일
-vendor/           # 번들러가 설치한 Gem 파일
-Gemfile.lock      # Gemfile.lock 파일 (필요 시에만 포함)
+_site/
+.sass-cache/

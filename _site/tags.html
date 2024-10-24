@@ -1,266 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tags | 나무</title>
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Tags | 구트리</title>
-<meta name="generator" content="Jekyll v4.3.3">
-<meta property="og:title" content="Tags">
-<meta name="author" content="nwgu">
-<meta property="og:locale" content="ko">
-<link rel="canonical" href="http://localhost:4000/tags.html">
-<meta property="og:url" content="http://localhost:4000/tags.html">
-<meta property="og:site_name" content="구트리">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="Tags">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"nwgu"},"headline":"Tags","url":"http://localhost:4000/tags.html"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="icon" href="">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="구트리">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="/assets/css/main.css" media="all">
+  <link rel="canonical" href="http://localhost:4000/tags">
+  <link rel="alternate" type="application/rss+xml" title="나무"
+    href="/feed.xml" />
 
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-// Init highlight js
-document.addEventListener('DOMContentLoaded', function(event) {
-  var els = document.querySelectorAll('pre code')
-
-  function addLangData(block) {
-    var outer = block.parentElement.parentElement.parentElement;
-    var lang = block.getAttribute('data-lang');
-    for (var i = 0; i < outer.classList.length; i++) {
-      var cls = outer.classList[i];
-      if (cls.startsWith('language-')) {
-        lang = cls;
-        break;
-      }
-    }
-    if (!lang) {
-      cls = block.getAttribute('class');
-      lang = cls ? cls.replace('hljs ', '') : '';
-    }
-    if (lang.startsWith('language-')) {
-      lang = lang.substr(9);
-    }
-    block.setAttribute('class', 'hljs ' + lang);
-    block.parentNode.setAttribute('data-lang', lang);
-  }
-
-  function addBadge(block) {
-    var enabled = ('true' || 'true').toLowerCase();
-    if (enabled == 'true') {
-      var pre = block.parentElement;
-      pre.classList.add('badge');
-    }
-  }
-
-  function handle(block) {
-    addLangData(block);
-    addBadge(block)
-    hljs.highlightBlock(block);
-  }
-
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i];
-    handle(el);
-  }
-});
-</script>
-
-<style>
-  /* code language badge */
-  pre.badge::before {
-    content: attr(data-lang);
-    color: #fff;
-    background-color: #ff4e00;
-    padding: 0 .5em;
-    border-radius: 0 2px;
-    text-transform: uppercase;
-    text-align: center;
-    min-width: 32px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-  }
-
-  /* fix wrong badge display for firefox browser */
-  code > table pre::before {
-    display: none;
-  }
-</style>
-<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css" rel="stylesheet">
-<style>
-  .pswp .pswp__container .pswp__img {
-    background-color: white;
-  }
-</style>
-
-<script>
-  function initPhotoSwipe() {
-    var mainEl = document.querySelector("section.main");
-
-    var imgEls = mainEl.querySelectorAll("img:not(.emoji)");
-    imgEls.forEach((imgEl) => {
-      imgEl.outerHTML = `
-    <a class="photo-swipe"
-      href="${imgEl.src}"
-      data-width="${imgEl.getAttribute("width") || imgEl.width * 2}"
-      data-height="${imgEl.getAttribute("height") || imgEl.height * 2}"
-      data-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
-      target="_blank">
-      ${imgEl.outerHTML}
-    </a>`;
-    });
-
-    // Init empty gallery array
-    var container = [];
-
-    // Loop over gallery items and push it to the array
-    var linkEls = mainEl.querySelectorAll("a.photo-swipe");
-    linkEls.forEach((link) => {
-      var item = {
-        src: link.getAttribute("href"),
-        w: link.dataset.width,
-        h: link.dataset.height,
-        title: link.dataset.caption || "",
-      };
-      container.push(item);
-    });
-
-    // Define click event on gallery item
-    linkEls.forEach((link, index) => {
-      link.addEventListener("click", (event) => {
-        // Prevent location change
-        event.preventDefault();
-
-        // Define object and gallery options
-        var pswp = document.querySelector(".pswp");
-
-        var zoomLevel = 1;
-
-        // Define object and gallery options
-        var options = {
-          index: index,
-          bgOpacity: 0.85,
-          showHideOpacity: true,
-          closeOnScroll: true,
-          maxSpreadZoom: 1,
-          getDoubleTapZoom: (isMouseClick, item) => {
-            if (item.detail) {
-              zoomLevel += item.detail.origEvent.shiftKey ? -1 : 1;
-              item.detail = undefined;
-            } else {
-              zoomLevel = zoomLevel === 1 ? 2 : 1;
-            }
-            if (zoomLevel <= 1) {
-              zoomLevel = 1;
-              setTimeout(() => pswp.classList.remove("pswp--zoomed-in"), 0);
-            }
-            return item.initialZoomLevel * zoomLevel;
-          },
-        };
-
-        // Initialize PhotoSwipe
-        var gallery = new PhotoSwipe(
-          pswp,
-          PhotoSwipeUI_Default,
-          container,
-          options
-        );
-
-        gallery.init();
-
-        // Custom zoom event
-        gallery.container.addEventListener("pswpTap", (e) => {
-          gallery.currItem.detail = e.detail;
-        });
-      });
-    });
-  }
-
-  window.addEventListener("load", initPhotoSwipe);
-</script>
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-</head>
-<body>
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-  <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-  <div class="pswp__bg"></div>
-  <!-- Slides wrapper with overflow:hidden. -->
-  <div class="pswp__scroll-wrap">
-    <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-    <div class="pswp__ui pswp__ui--hidden">
-      <div class="pswp__top-bar">
-        <!--  Controls are self-explanatory. Order can be changed. -->
-        <div class="pswp__counter"></div>
-        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        <button class="pswp__button pswp__button--share" title="Share"></button>
-        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-        <!-- element will get class pswp__preloader--active when preloader is running -->
-        <div class="pswp__preloader">
-          <div class="pswp__preloader__icn">
-            <div class="pswp__preloader__cut">
-              <div class="pswp__preloader__donut"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-        <div class="pswp__share-tooltip"></div>
-      </div>
-      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-      <div class="pswp__caption">
-        <div class="pswp__caption__center"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i" rel="stylesheet">
+</head><body>
 
 
 
@@ -387,23 +147,21 @@ document.addEventListener('DOMContentLoaded', function(event) {
 <header class="site-header " role="banner">
 
   <div class="wrapper">
-    <div class="site-header-inner">
-<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
-  <img class="site-favicon" title="구트리" src="" onerror="this.style.display='none'">
-  구트리
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="나무" src="/assets/img/favicon.ico" onerror="this.style.display='none'">
+  나무
 </a>
 </span><nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
             <span class="menu-icon">
-              <svg viewbox="0 0 18 15" width="18px" height="15px">
-                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
               </svg>
             </span>
           </label>
 
-          <div class="trigger">
-<a class="page-link" href="/about.html">ABOUT</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
+          <div class="trigger"><a class="page-link" href="/about">ABOUT</a><a class="page-link" href="/archives">ARCHIVES</a><a class="page-link" href="/categories">CATEGORIES</a><a class="page-link" href="/tags">TAGS</a>
 
 
 
@@ -437,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
-    pageLanguage: 'ko',
+    pageLanguage: 'en',
     autoDisplay: false,
     layout: google.translate.TranslateElement.InlineLayout.VERTICAL
   }, 'google_translate_element');
@@ -515,10 +273,8 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</span>
-</div>
-        </nav>
-</div>
+</span></div>
+        </nav></div>
   </div>
 </header>
 
@@ -757,7 +513,7 @@ function googleTranslateElementInit() {
   (function() {
     var sw = document.getElementById('theme-switch');
     var html = document.getElementsByTagName('html')[0];
-    var nightModeOption = ('on' || 'auto').toLowerCase();
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
     var storage = nightModeOption === 'manual'
         ? localStorage
         : sessionStorage;
@@ -898,7 +654,7 @@ function googleTranslateElementInit() {
         <li> 
 <span class="post-meta">Aug 20, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html">
+  <a class="post-link" href="/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84">
     SpringResourceTemplateResolver
   </a>
 </span>
@@ -913,7 +669,7 @@ function googleTranslateElementInit() {
         <li> 
 <span class="post-meta">Aug 21, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/21/enum.html">
+  <a class="post-link" href="/2024-08/enum">
     ENUM 타입 핸들러 클래스
   </a>
 </span>
@@ -928,23 +684,8 @@ function googleTranslateElementInit() {
         <li> 
 <span class="post-meta">Aug 21, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/21/enum.html">
+  <a class="post-link" href="/2024-08/enum">
     ENUM 타입 핸들러 클래스
-  </a>
-</span>
- </li>
-        
-      
-    
-    <h2 id="Outlet" class="segment-name">Outlet</h2>
-      
-      
-        
-        <li> 
-<span class="post-meta">Aug 22, 2024</span>
-<span>
-  <a class="post-link" href="/dev/2024/08/22/react-router.html">
-    Outlet 컴포넌트
   </a>
 </span>
  </li>
@@ -958,7 +699,7 @@ function googleTranslateElementInit() {
         <li> 
 <span class="post-meta">Aug 20, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html">
+  <a class="post-link" href="/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84">
     SpringResourceTemplateResolver
   </a>
 </span>
@@ -973,7 +714,7 @@ function googleTranslateElementInit() {
         <li> 
 <span class="post-meta">Aug 20, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html">
+  <a class="post-link" href="/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84">
     SpringResourceTemplateResolver
   </a>
 </span>
@@ -981,60 +722,338 @@ function googleTranslateElementInit() {
         
       
     
-    <h2 id="react" class="segment-name">react</h2>
+    <h2 id="java" class="segment-name">java</h2>
       
       
         
         <li> 
-<span class="post-meta">Aug 22, 2024</span>
+<span class="post-meta">Jun 1, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/22/react-router.html">
-    Outlet 컴포넌트
+  <a class="post-link" href="/2024-06/14">
+    · [React] 23년 클라우드 네이티브 기반 시스템 시범 전환사업
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">May 1, 2024</span>
+<span>
+  <a class="post-link" href="/2024-05/13">
+    · [Node, React, ReactNatvie] 참여공유형 SNS 플랫폼 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2024</span>
+<span>
+  <a class="post-link" href="/2024-01/12">
+    · [Java, SpringBoot, React, ReactNatvie] AI 기반 손톱 건강 체크 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Sep 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-09/11">
+    · [Java, SpringBoot, React] 해상교통정보시스템 웹 채팅 서비스 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Aug 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-08/10">
+    · [Java, SpringBoot, React] SH 서울주택도시공사 안전관리 통합 플랫폼 사업
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jul 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-07/9">
+    · [Node, ReactNative] 컨텐츠 공유 SNS 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jun 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-06/8">
+    · [Java, SpringBoot, ReactNative, Mysql] 탄소절감 IOT 기기제어 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">May 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-05/7">
+    · [Java, SpringBoot, ReactNative, Mysql] 군대 친구찾기 SNS 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-01/6">
+    · [Java, SpringBoot, Thymeleaf, Mysql] GPS 기반 병원 병상 및 거리체크 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Sep 1, 2022</span>
+<span>
+  <a class="post-link" href="/2022-09/5">
+    · [Java, SpringBoot, Thymeleaf, Mysql] 컨텐츠 메모 및 공유 플랫폼 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2022</span>
+<span>
+  <a class="post-link" href="/2022-01/4">
+    · [Java, SpringBoot, ReactNative, Mysql] 전국민 선거 SNS 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jun 1, 2021</span>
+<span>
+  <a class="post-link" href="/2021-06/6">
+    · [Java, SpringBoot, Thymeleaf, Mysql] 스마트 모빌리티 자전거 네비게이션 관제 웹 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jul 1, 2020</span>
+<span>
+  <a class="post-link" href="/2020-07/3">
+    · [ReactNative, Node, Mongo] 레스토랑 무인 주문결제 플랫폼 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2020</span>
+<span>
+  <a class="post-link" href="/2020-01/2">
+    · [Java, Egov] 교육부정보시스템 유지보수
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Nov 1, 2019</span>
+<span>
+  <a class="post-link" href="/2019-11/1">
+    · [산출물] 2019년 신약처 통합식품안전정보망 기능확대 구축
   </a>
 </span>
  </li>
         
       
     
-    <h2 id="react-router-dom" class="segment-name">react-router-dom</h2>
+    <h2 id="jsp" class="segment-name">jsp</h2>
       
       
         
         <li> 
-<span class="post-meta">Aug 22, 2024</span>
+<span class="post-meta">Jun 1, 2024</span>
 <span>
-  <a class="post-link" href="/dev/2024/08/22/react-router.html">
-    Outlet 컴포넌트
+  <a class="post-link" href="/2024-06/14">
+    · [React] 23년 클라우드 네이티브 기반 시스템 시범 전환사업
   </a>
 </span>
  </li>
         
       
-    
-    <h2 id="깃허브" class="segment-name">깃허브</h2>
-      
-      
         
         <li> 
-<span class="post-meta">Aug 19, 2024</span>
+<span class="post-meta">May 1, 2024</span>
 <span>
-  <a class="post-link" href="/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85.html">
-    지킬 세팅
+  <a class="post-link" href="/2024-05/13">
+    · [Node, React, ReactNatvie] 참여공유형 SNS 플랫폼 개발
   </a>
 </span>
  </li>
         
       
-    
-    <h2 id="지킬" class="segment-name">지킬</h2>
-      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2024</span>
+<span>
+  <a class="post-link" href="/2024-01/12">
+    · [Java, SpringBoot, React, ReactNatvie] AI 기반 손톱 건강 체크 앱 개발
+  </a>
+</span>
+ </li>
+        
       
         
         <li> 
-<span class="post-meta">Aug 19, 2024</span>
+<span class="post-meta">Sep 1, 2023</span>
 <span>
-  <a class="post-link" href="/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85.html">
-    지킬 세팅
+  <a class="post-link" href="/2023-09/11">
+    · [Java, SpringBoot, React] 해상교통정보시스템 웹 채팅 서비스 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Aug 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-08/10">
+    · [Java, SpringBoot, React] SH 서울주택도시공사 안전관리 통합 플랫폼 사업
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jul 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-07/9">
+    · [Node, ReactNative] 컨텐츠 공유 SNS 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jun 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-06/8">
+    · [Java, SpringBoot, ReactNative, Mysql] 탄소절감 IOT 기기제어 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">May 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-05/7">
+    · [Java, SpringBoot, ReactNative, Mysql] 군대 친구찾기 SNS 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2023</span>
+<span>
+  <a class="post-link" href="/2023-01/6">
+    · [Java, SpringBoot, Thymeleaf, Mysql] GPS 기반 병원 병상 및 거리체크 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Sep 1, 2022</span>
+<span>
+  <a class="post-link" href="/2022-09/5">
+    · [Java, SpringBoot, Thymeleaf, Mysql] 컨텐츠 메모 및 공유 플랫폼 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2022</span>
+<span>
+  <a class="post-link" href="/2022-01/4">
+    · [Java, SpringBoot, ReactNative, Mysql] 전국민 선거 SNS 앱 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jun 1, 2021</span>
+<span>
+  <a class="post-link" href="/2021-06/6">
+    · [Java, SpringBoot, Thymeleaf, Mysql] 스마트 모빌리티 자전거 네비게이션 관제 웹 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jul 1, 2020</span>
+<span>
+  <a class="post-link" href="/2020-07/3">
+    · [ReactNative, Node, Mongo] 레스토랑 무인 주문결제 플랫폼 개발
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Jan 1, 2020</span>
+<span>
+  <a class="post-link" href="/2020-01/2">
+    · [Java, Egov] 교육부정보시스템 유지보수
+  </a>
+</span>
+ </li>
+        
+      
+        
+        <li> 
+<span class="post-meta">Nov 1, 2019</span>
+<span>
+  <a class="post-link" href="/2019-11/1">
+    · [산출물] 2019년 신약처 통합식품안전정보망 기능확대 구축
   </a>
 </span>
  </li>
@@ -1071,7 +1090,7 @@ function googleTranslateElementInit() {
   <ul>
     <li>
       <a href="/index.html">
-        All<span>4</span>
+        All<span>18</span>
       </a>
     </li>
 
@@ -1095,12 +1114,6 @@ function googleTranslateElementInit() {
       </li>
     
       <li>
-        <a href="/tags.html#h-Outlet">
-          Outlet <span>1</span>
-        </a>
-      </li>
-    
-      <li>
         <a href="/tags.html#h-SpringResourceTemplateResolver">
           SpringResourceTemplateResolver <span>1</span>
         </a>
@@ -1113,26 +1126,14 @@ function googleTranslateElementInit() {
       </li>
     
       <li>
-        <a href="/tags.html#h-react">
-          react <span>1</span>
+        <a href="/tags.html#h-java">
+          java <span>15</span>
         </a>
       </li>
     
       <li>
-        <a href="/tags.html#h-react-router-dom">
-          react-router-dom <span>1</span>
-        </a>
-      </li>
-    
-      <li>
-        <a href="/tags.html#h-%EA%B9%83%ED%97%88%EB%B8%8C">
-          깃허브 <span>1</span>
-        </a>
-      </li>
-    
-      <li>
-        <a href="/tags.html#h-%EC%A7%80%ED%82%AC">
-          지킬 <span>1</span>
+        <a href="/tags.html#h-jsp">
+          jsp <span>15</span>
         </a>
       </li>
     
@@ -1146,8 +1147,7 @@ function googleTranslateElementInit() {
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
-    <div class="site-footer-inner">
-<!--<div>Unpublished Work <span class="copyleft">&copy;</span> 2017-2024 nwgu</div>
+    <div class="site-footer-inner"><!--<div></div>
       <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
       generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
       another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
@@ -1156,6 +1156,5 @@ function googleTranslateElementInit() {
     </div>
   </div>
 </footer>
-
 </body>
 </html>

@@ -1,14 +1,332 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2024-08-22T14:11:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">구트리</title><subtitle></subtitle><author><name>nwgu</name></author><entry><title type="html">Outlet 컴포넌트</title><link href="http://localhost:4000/dev/2024/08/22/react-router.html" rel="alternate" type="text/html" title="Outlet 컴포넌트" /><published>2024-08-22T00:00:00+09:00</published><updated>2024-08-22T00:00:00+09:00</updated><id>http://localhost:4000/dev/2024/08/22/react-router</id><content type="html" xml:base="http://localhost:4000/dev/2024/08/22/react-router.html"><![CDATA[<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Outlet</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-router-dom</span><span class="dl">'</span><span class="p">;</span>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>나무</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 24 Oct 2024 21:59:59 +0900</pubDate>
+    <lastBuildDate>Thu, 24 Oct 2024 21:59:59 +0900</lastBuildDate>
+    <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Outlet 컴포넌트</title>
+        <description>&lt;h3 id=&quot;react&quot;&gt;React&lt;/h3&gt;
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Outlet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react-router-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-<span class="k">return </span><span class="p">(</span>
-    <span class="p">&lt;</span><span class="nc">Outlet</span><span class="p">/&gt;</span>
-<span class="p">)</span>
+&lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Outlet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-</code></pre></div></div>
-<h3 id="해당-컴포넌트는-router-를-감싼-layout-에서-사용할-때-context-api-처럼-자식에서-데이터를-받아올수도-있다">해당 컴포넌트는 router 를 감싼 Layout 에서 사용할 때 context API 처럼 자식에서 데이터를 받아올수도 있다.</h3>]]></content><author><name>nwgu</name></author><category term="dev" /><category term="Outlet" /><category term="react-router-dom" /><category term="react" /><summary type="html"><![CDATA[```react import { Outlet } from ‘react-router-dom’;]]></summary></entry><entry><title type="html">ENUM 타입 핸들러 클래스</title><link href="http://localhost:4000/dev/2024/08/21/enum.html" rel="alternate" type="text/html" title="ENUM 타입 핸들러 클래스" /><published>2024-08-21T00:00:00+09:00</published><updated>2024-08-21T00:00:00+09:00</updated><id>http://localhost:4000/dev/2024/08/21/enum</id><content type="html" xml:base="http://localhost:4000/dev/2024/08/21/enum.html"><![CDATA[<p>MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler를 사용하는 것이라고 한다.
-분명 VO 에 명시를 해두었는데 db select 시 못 읽어오는 에러가 발생되어 찾아보니
-Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler를 써야한다고 한다.</p>]]></content><author><name>nwgu</name></author><category term="dev" /><category term="DateTypeHandler.java" /><category term="LunchParticipationTypeHandler.java" /><summary type="html"><![CDATA[MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler를 사용하는 것이라고 한다. 분명 VO 에 명시를 해두었는데 db select 시 못 읽어오는 에러가 발생되어 찾아보니 Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler를 써야한다고 한다.]]></summary></entry><entry><title type="html">SpringResourceTemplateResolver</title><link href="http://localhost:4000/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html" rel="alternate" type="text/html" title="SpringResourceTemplateResolver" /><published>2024-08-20T00:00:00+09:00</published><updated>2024-08-20T00:00:00+09:00</updated><id>http://localhost:4000/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84</id><content type="html" xml:base="http://localhost:4000/dev/2024/08/20/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84.html"><![CDATA[<p>Srping Boot jar 파일 배포하더라도 SpringResourceTemplateResolver 를 사용하여 템플릿 파일 위치 설정으로 template 파일을 읽을 수 있게 된다.</p>]]></content><author><name>nwgu</name></author><category term="dev" /><category term="Thymeleaf" /><category term="Config" /><category term="SpringResourceTemplateResolver" /><summary type="html"><![CDATA[Srping Boot jar 파일 배포하더라도 SpringResourceTemplateResolver 를 사용하여 템플릿 파일 위치 설정으로 template 파일을 읽을 수 있게 된다.]]></summary></entry><entry><title type="html">지킬 세팅</title><link href="http://localhost:4000/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85.html" rel="alternate" type="text/html" title="지킬 세팅" /><published>2024-08-19T00:00:00+09:00</published><updated>2024-08-19T00:00:00+09:00</updated><id>http://localhost:4000/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85</id><content type="html" xml:base="http://localhost:4000/markdown/2024/08/19/%EC%A7%80%ED%82%AC%EC%84%B8%ED%8C%85.html"><![CDATA[<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://jekyll-themes.com/jeffreytse/jekyll-theme-yat
-</code></pre></div></div>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;해당-컴포넌트는-router-를-감싼-layout-에서-사용할-때-context-api-처럼-자식에서-데이터를-받아올수도-있다&quot;&gt;해당 컴포넌트는 router 를 감싼 Layout 에서 사용할 때 context API 처럼 자식에서 데이터를 받아올수도 있다.&lt;/h3&gt;
+</description>
+        <pubDate>Thu, 22 Aug 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2024-08/react-router</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-08/react-router</guid>
+        
+        
+        <category>dev</category>
+        
+      </item>
+    
+      <item>
+        <title>ENUM 타입 핸들러 클래스</title>
+        <description>&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
+&lt;h3 id=&quot;mybatis에서-enum-타입을-처리하는-방법-중-하나는-typehandler&quot;&gt;MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler&lt;/h3&gt;
 
-<pre><code class="language-git">bundle exec jekyll serve
-</code></pre>]]></content><author><name>nwgu</name></author><category term="markdown" /><category term="지킬" /><category term="깃허브" /><summary type="html"><![CDATA[https://jekyll-themes.com/jeffreytse/jekyll-theme-yat]]></summary></entry></feed>
+&lt;p&gt;Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler 를 써야함.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 21 Aug 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2024-08/enum</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-08/enum</guid>
+        
+        <category>DateTypeHandler.java</category>
+        
+        <category>LunchParticipationTypeHandler.java</category>
+        
+        
+        <category>dev</category>
+        
+      </item>
+    
+      <item>
+        <title>SpringResourceTemplateResolver</title>
+        <description>&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SpringResourceTemplateResolver 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;템플릿 파일 위치 설정으로 template 파일을 읽을 수 있게 된다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Aug 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84</guid>
+        
+        <category>Thymeleaf</category>
+        
+        <category>Config</category>
+        
+        <category>SpringResourceTemplateResolver</category>
+        
+        
+        <category>dev</category>
+        
+      </item>
+    
+      <item>
+        <title>· [React] 23년 클라우드 네이티브 기반 시스템 시범 전환사업</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Jun 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2024-06/14</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-06/14</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Node, React, ReactNatvie] 참여공유형 SNS 플랫폼 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 May 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2024-05/13</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-05/13</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, React, ReactNatvie] AI 기반 손톱 건강 체크 앱 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jan 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2024-01/12</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-01/12</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, React] 해상교통정보시스템 웹 채팅 서비스 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Sep 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-09/11</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-09/11</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, React] SH 서울주택도시공사 안전관리 통합 플랫폼 사업</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-08/10</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-08/10</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Node, ReactNative] 컨텐츠 공유 SNS 앱 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Jul 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-07/9</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-07/9</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, ReactNative, Mysql] 탄소절감 IOT 기기제어 앱 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Jun 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-06/8</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-06/8</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, ReactNative, Mysql] 군대 친구찾기 SNS 앱 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 May 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-05/7</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-05/7</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, Thymeleaf, Mysql] GPS 기반 병원 병상 및 거리체크 앱 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Jan 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-01/6</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-01/6</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, Thymeleaf, Mysql] 컨텐츠 메모 및 공유 플랫폼 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Sep 2022 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2022-09/5</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-09/5</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, ReactNative, Mysql] 전국민 선거 SNS 앱 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Jan 2022 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2022-01/4</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-01/4</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, SpringBoot, Thymeleaf, Mysql] 스마트 모빌리티 자전거 네비게이션 관제 웹 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jun 2021 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2021-06/6</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-06/6</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [ReactNative, Node, Mongo] 레스토랑 무인 주문결제 플랫폼 개발</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2020-07/3</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-07/3</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [Java, Egov] 교육부정보시스템 유지보수</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2020-01/2</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-01/2</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>· [산출물] 2019년 신약처 통합식품안전정보망 기능확대 구축</title>
+        <description>&lt;p&gt;qweqwe&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Nov 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-11/1</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-11/1</guid>
+        
+        <category>java</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+  </channel>
+</rss>
