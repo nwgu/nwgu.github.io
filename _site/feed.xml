@@ -5,28 +5,39 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Mar 2025 22:33:56 +0900</pubDate>
-    <lastBuildDate>Sat, 01 Mar 2025 22:33:56 +0900</lastBuildDate>
+    <pubDate>Sat, 01 Mar 2025 23:38:42 +0900</pubDate>
+    <lastBuildDate>Sat, 01 Mar 2025 23:38:42 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
         <title>java1</title>
-        <description>&lt;h1 id=&quot;️-자바1&quot;&gt;⭐️ 자바1&lt;/h1&gt;
+        <description>&lt;!-- https://postimages.org/  --&gt;
+&lt;h1 id=&quot;️-자바1---250308&quot;&gt;⭐️ 자바1 - 25.03.08&lt;/h1&gt;
 
 &lt;h1 id=&quot;-교육과정&quot;&gt;📌 교육과정&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;변수선언&lt;/li&gt;
-  &lt;li&gt;자료형&lt;/li&gt;
-  &lt;li&gt;조건문&lt;/li&gt;
-  &lt;li&gt;반복문&lt;/li&gt;
+  &lt;li&gt;변수와 자료형&lt;/li&gt;
+  &lt;li&gt;연산자&lt;/li&gt;
+  &lt;li&gt;제어문-1&lt;/li&gt;
+  &lt;li&gt;제어문-2&lt;/li&gt;
   &lt;li&gt;배열&lt;/li&gt;
+  &lt;li&gt;클래스&lt;/li&gt;
   &lt;li&gt;메서드&lt;/li&gt;
-  &lt;li&gt;객체, 상속, 클래스, 인터페이스 (객체지향)&lt;/li&gt;
+  &lt;li&gt;생성자&lt;/li&gt;
+  &lt;li&gt;상속&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- - 다형성과 타입 변환
+- 추상 클래스와 인터페이스
+- 내부 클래스
+- 예외 처리 --&gt;
+
+&lt;h1 id=&quot;-실습환경&quot;&gt;📌 실습환경&lt;/h1&gt;
+
+&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;이클립스 다운로드&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.onlinegdb.com/online_java_compiler&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://replit.com/~&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지2&lt;/code&gt; &lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.onlinegdb.com/online_java_compiler&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지&lt;/code&gt; &lt;/a&gt;
+&lt;!-- - [`실습 페이지2` ](https://replit.com/~){:target=&quot;_blank&quot;} --&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://school.programmers.co.kr/learn/courses/5/5-%EB%AC%B4%EB%A3%8C-%EC%9E%90%EB%B0%94-%EC%9E%85%EB%AC%B8&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;프로그래머스 자바 기초&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc&amp;amp;page=1&amp;amp;languages=java&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;프로그래머스 코딩 기초 트레이닝&lt;/code&gt; &lt;/a&gt;
 &lt;!-- - [`점프투 스프링부트` ](https://wikidocs.net/book/7601){:target=&quot;_blank&quot;} --&gt;&lt;/li&gt;
@@ -39,18 +50,42 @@
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;-챕터-1--실행과-환경&quot;&gt;📌 챕터 1 : 실행과 환경&lt;/h1&gt;
-
 &lt;ul&gt;
   &lt;li&gt;프로그램의 실행은 위에서 아래로 흘러간다.&lt;/li&gt;
   &lt;li&gt;자바는 “무조건” main 메소드(기능)을 거쳐서 실행된다.&lt;/li&gt;
   &lt;li&gt;들여쓰기는 에러를 유발시키진 않지만 “무조건” 지켜야 한다. (중괄호를 열었으면 그 안 코드로직은 탭을 눌러 들여쓰기를 해야 함.)
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Main.java 파일&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ---&amp;gt; 클래스 시작&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ---&amp;gt; 메서드 본체 시작&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ---&amp;gt; 실행문&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ---&amp;gt; 메서드 본체의 끝&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-챕터-2--변수와-자료형&quot;&gt;📌 챕터 2 : 변수와 자료형&lt;/h1&gt;
+
+&lt;h1 id=&quot;-챕터-3--연산자&quot;&gt;📌 챕터 3 : 연산자&lt;/h1&gt;
+&lt;h2 id=&quot;-연산자-종류&quot;&gt;📢 연산자 종류&lt;/h2&gt;
+&lt;h3 id=&quot;사칙연산&quot;&gt;사칙연산&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;더하기 : +&lt;/li&gt;
+  &lt;li&gt;빼기 : -&lt;/li&gt;
+  &lt;li&gt;나누기 : /&lt;/li&gt;
+  &lt;li&gt;곱하기 : *&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;대입논리연산&quot;&gt;대입&amp;amp;논리연산&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;같다 : ==&lt;/li&gt;
+  &lt;li&gt;다르다 : !=&lt;/li&gt;
+  &lt;li&gt;크다(초과) : &amp;gt;&lt;/li&gt;
+  &lt;li&gt;작다(미만) : &amp;lt;&lt;/li&gt;
+  &lt;li&gt;크거나 같다(이상) : &amp;gt;=&lt;/li&gt;
+  &lt;li&gt;작거나 같다(이하) : &amp;lt;=&lt;/li&gt;
+  &lt;li&gt;그리고(and) : &amp;amp;&amp;amp;&lt;/li&gt;
+  &lt;li&gt;또는(or) : ||&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 28 Feb 2025 00:00:00 +0900</pubDate>
