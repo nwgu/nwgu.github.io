@@ -1,336 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>나무</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
+    <title>구남우</title>
+    <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Oct 2024 23:50:23 +0900</pubDate>
-    <lastBuildDate>Thu, 24 Oct 2024 23:50:23 +0900</lastBuildDate>
+    <pubDate>Sat, 01 Mar 2025 22:33:56 +0900</pubDate>
+    <lastBuildDate>Sat, 01 Mar 2025 22:33:56 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>Outlet 컴포넌트</title>
-        <description>&lt;h3 id=&quot;react&quot;&gt;React&lt;/h3&gt;
-&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Outlet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react-router-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        <title>java1</title>
+        <description>&lt;h1 id=&quot;️-자바1&quot;&gt;⭐️ 자바1&lt;/h1&gt;
 
-&lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Outlet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;h1 id=&quot;-교육과정&quot;&gt;📌 교육과정&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;변수선언&lt;/li&gt;
+  &lt;li&gt;자료형&lt;/li&gt;
+  &lt;li&gt;조건문&lt;/li&gt;
+  &lt;li&gt;반복문&lt;/li&gt;
+  &lt;li&gt;배열&lt;/li&gt;
+  &lt;li&gt;메서드&lt;/li&gt;
+  &lt;li&gt;객체, 상속, 클래스, 인터페이스 (객체지향)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;이클립스 다운로드&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.onlinegdb.com/online_java_compiler&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://replit.com/~&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지2&lt;/code&gt; &lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://school.programmers.co.kr/learn/courses/5/5-%EB%AC%B4%EB%A3%8C-%EC%9E%90%EB%B0%94-%EC%9E%85%EB%AC%B8&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;프로그래머스 자바 기초&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc&amp;amp;page=1&amp;amp;languages=java&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;프로그래머스 코딩 기초 트레이닝&lt;/code&gt; &lt;/a&gt;
+&lt;!-- - [`점프투 스프링부트` ](https://wikidocs.net/book/7601){:target=&quot;_blank&quot;} --&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;해당-컴포넌트는-router-를-감싼-layout-에서-사용할-때-context-api-처럼-자식에서-데이터를-받아올수도-있다&quot;&gt;해당 컴포넌트는 router 를 감싼 Layout 에서 사용할 때 context API 처럼 자식에서 데이터를 받아올수도 있다.&lt;/h3&gt;
-</description>
-        <pubDate>Thu, 22 Aug 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024-08/react-router</link>
-        <guid isPermaLink="true">http://localhost:4000/2024-08/react-router</guid>
-        
-        
-        <category>dev</category>
-        
-      </item>
-    
-      <item>
-        <title>ENUM 타입 핸들러 클래스</title>
-        <description>&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
-&lt;h3 id=&quot;mybatis에서-enum-타입을-처리하는-방법-중-하나는-typehandler&quot;&gt;MyBatis에서 ENUM 타입을 처리하는 방법 중 하나는 TypeHandler&lt;/h3&gt;
+&lt;h1 id=&quot;-쓰면-좋은-개발-도구&quot;&gt;📌 쓰면 좋은 개발 도구&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://claude.ai/new&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;클러드 생성형 AI &lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chatgpt.com/&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHAT GPT &lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Mybatis 가 특정 데이터 타입을 어떻게 변환하고 처리할지 정의하는 클래스인 TypeHandler 를 써야함.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 21 Aug 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024-08/enum</link>
-        <guid isPermaLink="true">http://localhost:4000/2024-08/enum</guid>
-        
-        <category>DateTypeHandler.java</category>
-        
-        <category>LunchParticipationTypeHandler.java</category>
-        
-        
-        <category>dev</category>
-        
-      </item>
-    
-      <item>
-        <title>SpringResourceTemplateResolver</title>
-        <description>&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SpringResourceTemplateResolver 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;템플릿 파일 위치 설정으로 template 파일을 읽을 수 있게 된다.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 20 Aug 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84</link>
-        <guid isPermaLink="true">http://localhost:4000/2024-08/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84</guid>
-        
-        <category>Thymeleaf</category>
-        
-        <category>Config</category>
-        
-        <category>SpringResourceTemplateResolver</category>
-        
-        
-        <category>dev</category>
-        
-      </item>
-    
-      <item>
-        <title>· [React] 23년 클라우드 네이티브 기반 시스템 시범 전환사업</title>
-        <description>&lt;h1 id=&quot;할많하않&quot;&gt;할많하않&lt;/h1&gt;
-</description>
-        <pubDate>Sat, 01 Jun 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024-06/14</link>
-        <guid isPermaLink="true">http://localhost:4000/2024-06/14</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Node, React, ReactNatvie] 참여공유형 SNS 플랫폼 개발</title>
-        <description>&lt;p&gt;인스타와 비슷한 기능에서 &lt;span style=&quot;background-color:#fff5b1&quot;&gt; 미션 &lt;/span&gt;이 접목된 어플리케이션 서비스 &lt;br /&gt;
-특정 위치에서 &lt;span style=&quot;background-color:#fff5b1&quot;&gt; GPS &lt;/span&gt; 값과 함께 미션을 저장하고 해당 &lt;span style=&quot;background-color:#fff5b1&quot;&gt; 미션 &lt;/span&gt; 을 맞추면 &lt;br /&gt;
-걸어두었던 상품이 맞춘 유저에게 인계되는 기능..&lt;/p&gt;
+&lt;h1 id=&quot;-챕터-1--실행과-환경&quot;&gt;📌 챕터 1 : 실행과 환경&lt;/h1&gt;
 
-&lt;p&gt;기술상 어려운 건 없었으나 클라이언트 요구사항 덕분에 꽤나 행복함을 느꼈던 프로젝트&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;프로그램의 실행은 위에서 아래로 흘러간다.&lt;/li&gt;
+  &lt;li&gt;자바는 “무조건” main 메소드(기능)을 거쳐서 실행된다.&lt;/li&gt;
+  &lt;li&gt;들여쓰기는 에러를 유발시키진 않지만 “무조건” 지켜야 한다. (중괄호를 열었으면 그 안 코드로직은 탭을 눌러 들여쓰기를 해야 함.)
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Wed, 01 May 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024-05/13</link>
-        <guid isPermaLink="true">http://localhost:4000/2024-05/13</guid>
+        <pubDate>Fri, 28 Feb 2025 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/java/2025/02/28/java1/</link>
+        <guid isPermaLink="true">http://localhost:4000/java/2025/02/28/java1/</guid>
         
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, React, ReactNatvie] AI 기반 손톱 건강 체크 앱 개발</title>
-        <description>&lt;p&gt;회원의 성별, 나이, 지병 등에 따라 AI 서버로부터 리턴되는 데이터를 소팅해주는 어플리케이션 서비스 &lt;br /&gt;
-기능은 크게 카메라로 손톱을 찍어서 AI 서버에 보내면 해당 서버에서 손톱을 분석해 비타민을 추천해주는 서비스다.&lt;/p&gt;
-
-&lt;p&gt;처음엔 구글 심사에서 개인정보 때문에 무조건 리젝일 줄 알았는데 의외로 순순히 올라갔었다.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Jan 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024-01/12</link>
-        <guid isPermaLink="true">http://localhost:4000/2024-01/12</guid>
         
         <category>java</category>
-        
-        <category>jsp</category>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, React] 해상교통정보시스템 웹 채팅 서비스 개발</title>
-        <description>&lt;p&gt;당시 react 로 채팅, 음성방송 등의 솔루션을 사용하여 구축했었는데 제대로 기억이 안난다.. &lt;br /&gt;
-실개발보단 배포같은 인프라 부분과 클라이언트 소통을 더 많이했던 프로젝트였다.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Sep 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2023-09/11</link>
-        <guid isPermaLink="true">http://localhost:4000/2023-09/11</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, React] SH 서울주택도시공사 안전관리 통합 플랫폼 사업</title>
-        <description>&lt;p&gt;해당 프로젝트는 react &lt;strong&gt;TS&lt;/strong&gt; 로 게시판 등을 유지관리했던 프로젝트. &lt;br /&gt;
-관리자들의 민원 받는 게시판을 담당했었다. 일반 &lt;strong&gt;JS&lt;/strong&gt; 를 해왔어서 상당히 &lt;strong&gt;TS&lt;/strong&gt; 가 까다롭게 느껴졌었다. &lt;br /&gt;
-더불어 누군가 만들어놓은 &lt;strong&gt;JPA&lt;/strong&gt; 코드도 분석하며 다양하게 배울 수 있었던 프로젝트&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Aug 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2023-08/10</link>
-        <guid isPermaLink="true">http://localhost:4000/2023-08/10</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Node, ReactNative] 컨텐츠 공유 SNS 앱 개발</title>
-        <description>&lt;p&gt;취지는 오늘의 일상을 찍어 올리는 인스타와 비슷한 소셜 어플리케이션.&lt;br /&gt;
-팔로잉, 해쉬태그, 좋아요 등등 동료들이랑 무난하게 개발했던 프로젝트였다.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Jul 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2023-07/9</link>
-        <guid isPermaLink="true">http://localhost:4000/2023-07/9</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, ReactNative, Mysql] 탄소절감 IOT 기기제어 앱 개발</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://kenjdavidson.com/react-native-bluetooth-classic/&quot;&gt;react-native-bluetooth-classic&lt;/a&gt;를 이용하여 기기를 제어하고 기록을 뿌려주는 서비스. 하드웨어사에서 기기와 자동차 연결 후 데이터 정제 불가능 이슈로 중단되었지만 그 것보다 사용자가 가입할 때
-차종을 저장 해야 했어서 그 많은 차종을 DB 에 떄려박아 저장했었던 게 더 혼종 같았다. 차량 오픈 API 는 없나?&lt;/p&gt;
-</description>
-        <pubDate>Thu, 01 Jun 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2023-06/8</link>
-        <guid isPermaLink="true">http://localhost:4000/2023-06/8</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, ReactNative, Mysql] 군대 친구찾기 SNS 앱 개발</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/crossplatformkorea/react-native-kakao-login&quot;&gt;카카오 로그인&lt;/a&gt; &lt;br /&gt;
-처음 카카오 SDK 를 이용하여 SNS 연동 로그인을 적용하였던 프로젝트.  &lt;br /&gt;
-그 당시 생각하면 개헬이였다. &lt;strong&gt;dev키&lt;/strong&gt; , &lt;strong&gt;release키&lt;/strong&gt;, 기억이 가물가물한데 &lt;br /&gt;
-구글에 올릴 때 또 맞춰줘야하는 &lt;strong&gt;해쉬키&lt;/strong&gt; 까지 그 로직들이 다 처음이였어서 &lt;br /&gt;
-릴리즈일 때 로그인 안되고 스토어 올라갔을때도 로그인이 안 되었어서 진짜 난감해었다. &lt;br /&gt;
-거기다가 IOS 는 release 테스트 할 때는 잘 되는데 testflight 에 올려보면 계속 크래쉬가 났어서 일기 쓰는 지금도 과거의 생각때문에 그라데이션 분노가 펼쳐진다.&lt;/p&gt;
-
-&lt;h3 id=&quot;로그인이-안-되었는데-어떻게-심사에-통과를-했냐&quot;&gt;로그인이 안 되었는데 어떻게 심사에 통과를 했냐?&lt;/h3&gt;
-
-&lt;p&gt;그냥 카카오 버튼 누르면 로그인 되게 만들었었는데 그게 통과가 됐었었다.&lt;/p&gt;
-
-&lt;p&gt;암튼 해당 프로젝트는 육군, 해군, 공군, 해병대 의 각 연대부터 중대를 선택해서 &lt;br /&gt;
-각 부대별로 추억의 게시글도 올리고 알람도 보내는 앱 이였다.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 May 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2023-05/7</link>
-        <guid isPermaLink="true">http://localhost:4000/2023-05/7</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, Thymeleaf, Mysql] GPS 기반 병원 병상 및 거리체크 앱 개발</title>
-        <description>&lt;p&gt;해당 프로젝트는 공공데이터포털에서 응급 병상 데이터를 갖고와 본인의 현재 위치GPS 값을 가져와서 가까운 순으로 데이터를 뿌려줬던 서비스였다. &lt;br /&gt;
-GPS 는 클라이언트의 요청으로 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API&quot;&gt;GeoLocation&lt;/a&gt; 을 썼었는데 지금 생각해보면 어차피 앱인데 굳이 왜 웹 API 를 썼었는지 이해가 안간다. &lt;br /&gt;
-병상 정보 UI 쪽은 웹뷰를 써서 그랬었던 거 같기도 한걸로 기억이 들기도 하고… &lt;br /&gt;
-암튼 이 이후로 엑스포는 쳐다도 안 봤다. 빌드가 겁나 느려서 넘 스트레스 받았었다.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Jan 2023 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2023-01/6</link>
-        <guid isPermaLink="true">http://localhost:4000/2023-01/6</guid>
-        
-        <category>java</category>
-        
-        <category>jsp</category>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, Thymeleaf, Mysql] 컨텐츠 메모 및 공유 플랫폼 개발</title>
-        <description>&lt;p&gt;그냥 일반적인 메모 및 컨텐츠 공유 플랫폼이였다.&lt;/p&gt;
-
-&lt;p&gt;다만 앱 쪽은 오프라인에서도 등록이 되어야 하고 인터넷 연결이 되었을 때 다시 서버에 요청을 해야 되는 상황이였어서 이때 나는 웹을 맡았었는데 앱 파트 맡은 형님은 죽기 직전이였다. &lt;br /&gt;
-그리고 백엔드 맡은 형님이 앱에 API 를 맞춰놔서 내가 통신할 땐 문제가 좀 있었다.&lt;/p&gt;
-
-&lt;p&gt;예를들면 웹쪽 클라이언트에서 사용자 고유코드넘버가 노출되어 무슨 백도어 마냥 되어 있었어서 소통에 좀 힘이 들었었다.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 01 Sep 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2022-09/5</link>
-        <guid isPermaLink="true">http://localhost:4000/2022-09/5</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, ReactNative, Mysql] 전국민 선거 SNS 앱 개발</title>
-        <description>&lt;p&gt;휴대폰을 흔들었을 때 가속도 센서를 이용해 특정 정당의 색깔이 반짝이게 하는 유세 활동 어플리케이션.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;background-color:#fff5b1&quot;&gt; &lt;a href=&quot;https://docs.expo.dev/versions/latest/sdk/sensors/&quot;&gt;엑스포cli&amp;amp;센서라이브러리&lt;/a&gt; &lt;/span&gt;  를 통해 쉽게 구현했었다.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Jan 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2022-01/4</link>
-        <guid isPermaLink="true">http://localhost:4000/2022-01/4</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, SpringBoot, Thymeleaf, Mysql] 스마트 모빌리티 자전거 네비게이션 관제 웹 개발</title>
-        <description>&lt;p&gt;사용자 시연도하고 눈에 보이는 트래픽으로 개인적으로 가장 재미있게 했던 프로젝트&lt;/p&gt;
-
-&lt;p&gt;내 파트는 관리자 관제 웹 페이지였고 앱 으로부터 소켓을 통해 위치 정보를 받아와 카카오 MapAPI 를 이용하여 자전거를 탄 사용자를 표기해주고 예약, 긴급 소켓등의 API 를 만들어서 공사를 한다든지, 날씨가 어떻다든지 등을 알려주어 사람들이 자전거를 좀 더 좋은 환경에서 탈 수 있게끔 해주는 서비스였다.&lt;/p&gt;
-
-&lt;p&gt;우리들만의 소켓 통신 프로토콜을 만들었고 실제 도로 위 싱크홀 등을 웹 페이지에 표기를 해줘야 했어서 해당 싱크홀은 AI 파트를 맡은 형님이 학습을 통해 데이터 정제를 해야한다고 직접 회사 사람들 3~4명이서 자전거 타고 어떤 형태의 싱크홀인지 학습을 시킨 후 다시 들어와 개발을 했었다. 몇 주 탄 거 같은데..&lt;/p&gt;
-
-&lt;p&gt;그리고 시연날이 됐을 때 대전 한밭수목원에서 테스터들을 고용해 직접 노트북도 가져가 시연을 했었는데 한 20~30분 타니까 지도 API 에서 마커랑 주소변환 때문에 트래픽이 팍 튀어올라서 순식간에 하루 무료 데이터 초과 직전이였어서 대표님이 빨리 서버 닫으라고 했었다. 상당히 흥미로웠었다.&lt;/p&gt;
-
-&lt;p&gt;그리고 그 이후 다시 들어와 여러가지 보완을 통해 다양하게 배웠었던 프로젝트이다.&lt;/p&gt;
-
-&lt;p&gt;아무것도 몰랐었던 그 때 트래픽좀 줄여보겠다고 nginx 에서 로드밸런싱도 해보보고 별짓거리 다했었던 거 같다. 아무짝에 상관도 없었지만..ㅎ&lt;/p&gt;
-
-&lt;p&gt;암튼 이 프로젝트에서 웹서버, 보안 프로토콜 등 다양한 cs 지식을 쌓았었다.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Jun 2021 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2021-06/6</link>
-        <guid isPermaLink="true">http://localhost:4000/2021-06/6</guid>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [ReactNative, Node, Mongo] 레스토랑 무인 주문결제 플랫폼 개발</title>
-        <description>
-</description>
-        <pubDate>Wed, 01 Jul 2020 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2020-07/3</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-07/3</guid>
-        
-        <category>java</category>
-        
-        <category>jsp</category>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [Java, Egov] 교육부정보시스템 유지보수</title>
-        <description>
-</description>
-        <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2020-01/2</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-01/2</guid>
-        
-        <category>java</category>
-        
-        <category>jsp</category>
-        
-        
-        <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>· [산출물] 2019년 신약처 통합식품안전정보망 기능확대 구축</title>
-        <description>
-</description>
-        <pubDate>Fri, 01 Nov 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2019-11/1</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-11/1</guid>
-        
-        <category>java</category>
-        
-        <category>jsp</category>
-        
-        
-        <category>history</category>
         
       </item>
     

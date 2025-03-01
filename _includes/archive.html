@@ -1,52 +1,43 @@
-<!-- each category page -->
-{% if page.type %}
-<div class="archive">
-  <p class="archive_type">{{ page.type }}</p>
-  <ul>
-    {% for post in site.categories[page.type] %}
-    {% if post.url %}
-    <li>
-        <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-        <div class='archive_title'>
-          <a href='{{ post.url | relative_url }}'>
-            {{ post.title | escape }}
-          </a>
-        </div>
-      </li>
+<div class="page-wrapper" tabindex="-1" role="main">
+    {% if page.cover %}
+        <img src="{{ page.cover }}"
+             width="100%"
+             height="{{ page.cover_height | default: '100%' }}"
+             alt="{{ page.title | escape }}"
+             style="object-fit: cover;"
+        />
     {% endif %}
-    {% endfor %}
 
-  </ul>
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    {% if page.title %}
+                        <h1 id="{{ page.id }}">{{ page.title | escape }}</h1>
+                    {% else %}
+                        <h1 id="{{ page.id }}">{{ site.title | escape }}</h1>
+                    {% endif %}
+
+                    {{ content }}
+
+                    {%- if jekyll.environment != 'dev' and site.disqushandler -%}
+                        {%- include disqus.html -%}
+                    {%- endif -%}
+                </section>
+            </div>
+
+            {%- include search.html -%}
+        </div>
+    </div>
 </div>
 
-<!-- main page -->
-{% else %}
-<div class="archive">
-  {% for post in site.posts %}
-  {% unless post.next %}
-  <p class="archive_year">{{ post.date | date: '%Y' }}</p>
-  {% else %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture nextyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-  {% if year != nextyear %}
-  <p class="archive_year">{{ post.date | date: '%Y' }}</p>
-  {% endif %}
-  {% endunless %}
+<!-- introduce mathjax support -->
+{% include mathjax.html %}
 
-  <ul>
-    <li>
-      <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-        {{ post.date | date: "%b %d" }}
-      </time>
-      <div class='archive_title'>
-        <a href='{{ post.url | relative_url }}'>
-          {{ post.title | escape }}
-        </a>
-      </div>
-    </li>
-  </ul>
-  {% endfor %}
-</div>
+<!-- introduce per-page mermaid support -->
+{% if page.mermaid %}
+    {% include mermaid.html %}
 {% endif %}
+
+<!-- introduce mathjax support -->
+{% include fixes-chrome-anchors.html %}

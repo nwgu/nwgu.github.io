@@ -1,49 +1,79 @@
-
-title: 나무 #Your awesome title
+# Configurations
+title: 구남우
+# longtitle: ''
+# author: 구남우
 email: nwgu99@gmail.com
-description: > # this means to ignore newlines until "baseurl"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: 블로그
 
-baseurl: # the subpath of the site
-url: http://starry99.github.io/catbook # the base hostname & protocol for your site
+version:          1.0
+gitbook_version:  3.2.3
 
-permalink: /:year-:month/:title
-timezone: Asia/Seoul
+url:              'https://sighingnow.github.io'
+baseurl:          ''
+rss:              RSS
 
-favicon: /assets/img/favicon.ico
+# bootstrap: use the remote theme for the site itself
+remote_theme: sighingnow/jekyll-gitbook
 
-google_analytics: #UA—XXXXXXXX-X
-disqus_shortname: #disqus shortname
-cusdis:
-    app_id: #your cusdis app_id
+toc:
+  enabled: true
+  h_min:   1
+  h_max:   3
 
-user:
-  name: #나무
-  pic: /assets/img/main_icon.png
-  picAlt: "catbook"
-  job : nwgu99@gmail.com
-  aboutme: false # comment this out if you don't need the 'about' page.
+# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
+favicon_path:     /assets/gitbook/images/favicon.ico
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+syntax_highlighter_style: colorful
+
+markdown_ext:             markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+# permalink:                /:categories/:year-:month-:day-:title:output_ext
+permalink: /:categories/:year/:month/:day/:title/
+
+# Disqus comments
+# disqushandler:            sighingnow
 
 exclude:
+  - _drafts
+  - _pages/contact.md
+  - _pages/design
+  - _pages/about.md
+  - _others
   - README.md
-  - LICENSE
-  - github
 
-defaults:
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      comment: true   
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+  others:
+    output: true
+    permalink: /:collection/:path/
 
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown 
+ordered_collections:
+  - posts
+  - pages
+  - others
 
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      false
-unpublished: false
+page_width: 800px
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
