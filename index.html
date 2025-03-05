@@ -2,8 +2,159 @@
 layout: page
 ---
 
-
 {% include index.html %}
 
-<h1>수업 문의 QR 참여코드 : 1004</h1>
-<img src="/구남우-qr.jpeg" alt="이미지 설명" style="width: 300px; height: 300px;">
+<div class="posts-container">
+  <div class="posts-list">
+    {% for post in site.posts %}
+      <div class="post-card">
+        <div class="post-date">
+          <span>{{ post.date | date: "%Y년 %m월 %d일" }}</span>
+        </div>
+        <h2 class="post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        {% if post.description %}
+          <div class="post-excerpt">
+            <p>{{ post.description }}</p>
+          </div>
+        {% endif %}
+        <div class="post-more">
+          <a href="{{ post.url | relative_url }}" class="read-more">자세히 보기 →</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="qr-section">
+    <h2>수업 문의</h2>
+    <p>참여코드: <span class="qr-code">1004</span></p>
+    <div class="qr-image">
+      <img src="/구남우-qr.jpeg" alt="수업 문의 QR 코드" />
+    </div>
+  </div>
+</div>
+
+<style>
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .post-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .post-date {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .post-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .post-title a:hover {
+    color: #007bff;
+  }
+  
+  .post-excerpt {
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .post-more {
+    text-align: right;
+  }
+  
+  .read-more {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .qr-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+  }
+  
+  .qr-section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .qr-code {
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .qr-image {
+    margin-top: 1.5rem;
+  }
+  
+  .qr-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .posts-container {
+      flex-direction: row;
+    }
+    
+    .posts-list {
+      flex: 3;
+    }
+    
+    .qr-section {
+      flex: 1;
+      margin-top: 0;
+      align-self: flex-start;
+      position: sticky;
+      top: 2rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .posts-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
