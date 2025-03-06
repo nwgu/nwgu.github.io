@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Mar 2025 23:24:20 +0900</pubDate>
-    <lastBuildDate>Thu, 06 Mar 2025 23:24:20 +0900</lastBuildDate>
+    <pubDate>Thu, 06 Mar 2025 23:28:39 +0900</pubDate>
+    <lastBuildDate>Thu, 06 Mar 2025 23:28:39 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -459,9 +459,9 @@
       &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 &amp;amp; 011 = 001&lt;/code&gt;)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;비트 OR&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 \| 3&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 | 3&lt;/code&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 \| 011 = 111&lt;/code&gt;)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -576,7 +576,7 @@
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;10&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\|&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;비트 OR&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -586,7 +586,7 @@
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;12&lt;/span&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\|\|&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;논리 OR&lt;/span&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
