@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Mar 2025 21:36:40 +0900</pubDate>
-    <lastBuildDate>Thu, 06 Mar 2025 21:36:40 +0900</lastBuildDate>
+    <pubDate>Thu, 06 Mar 2025 23:24:20 +0900</pubDate>
+    <lastBuildDate>Thu, 06 Mar 2025 23:24:20 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -66,7 +66,7 @@
 
 &lt;h1 id=&quot;-챕터-2--변수와-자료형&quot;&gt;📌 챕터 2 : 변수와 자료형&lt;/h1&gt;
 
-&lt;h2 id=&quot;변수란&quot;&gt;변수란?&lt;/h2&gt;
+&lt;h2 id=&quot;-변수란&quot;&gt;📢 변수란?&lt;/h2&gt;
 &lt;p&gt;변수는 데이터를 저장하는 공간(메모리)으로,
 다른 데이터를 계속해서 변경할 수 있음.&lt;/p&gt;
 &lt;h2 id=&quot;변수를-선언하고-값을-할당하는-방법&quot;&gt;변수를 선언하고 값을 할당하는 방법&lt;/h2&gt;
@@ -93,7 +93,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;상수란&quot;&gt;상수란?&lt;/h2&gt;
+&lt;h2 id=&quot;-상수란&quot;&gt;📢 상수란?&lt;/h2&gt;
 &lt;p&gt;한 번 초기화(할당)된 값을 변경할 수 없음.
 변하지 않는 값.&lt;/p&gt;
 
@@ -212,23 +212,522 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;!-- # 📌 챕터 3 : 연산자
-## 📢 연산자 종류  
-### 사칙연산  
-- 더하기 : +
-- 빼기 : -
-- 나누기 : /
-- 곱하기 : *
+&lt;h1 id=&quot;-챕터-3--연산자&quot;&gt;📌 챕터 3 : 연산자&lt;/h1&gt;
+&lt;h2 id=&quot;-연산자-종류&quot;&gt;📢 연산자 종류&lt;/h2&gt;
 
-### 대입&amp;논리연산
-- 같다 : ==
-- 다르다 : !=
-- 크다(초과) : &gt;
-- 작다(미만) : &lt;
-- 크거나 같다(이상) : &gt;=
-- 작거나 같다(이하) : &lt;=
-- 그리고(and) : &amp;&amp;
-- 또는(or) : \|\| --&gt;
+&lt;h2 id=&quot;1️⃣-산술-연산자&quot;&gt;1️⃣ 산술 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;덧셈&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int sum = 10 + 20;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sum&lt;/code&gt;은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;30&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;뺄셈&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int diff = 20 - 10;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;곱셈&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int product = 5 * 4;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;product&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;나눗셈&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int quotient = 10 / 3;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;quotient&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt; (정수 나눗셈)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;나눗셈 (실수)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double result = 10.0 / 3.0;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.3333...&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;나머지&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int remainder = 10 % 3;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;remainder&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;2️⃣-증감-연산자&quot;&gt;2️⃣ 증감 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++&lt;/code&gt; (전위)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;먼저 값을 1 증가시킨 후 연산&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int a = 5; int b = ++a;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++&lt;/code&gt; (후위)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;연산 후 값을 1 증가&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int a = 5; int b = a++;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; (전위)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;먼저 값을 1 감소시킨 후 연산&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int a = 5; int b = --a;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; (후위)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;연산 후 값을 1 감소&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int a = 5; int b = a--;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;3️⃣-할당-연산자&quot;&gt;3️⃣ 할당 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;동일 표현&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;할당&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int a = 10;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;덧셈 후 할당&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a += 5;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a = a + 5;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;뺄셈 후 할당&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a -= 5;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a = a - 5;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;곱셈 후 할당&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a *= 2;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a = a * 2;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;나눗셈 후 할당&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a /= 2;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a = a / 2;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;나머지 연산 후 할당&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a %= 3;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a = a % 3;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;4️⃣-비교-연산자&quot;&gt;4️⃣ 비교 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;같음&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 == 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;같지 않음&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 != 6&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;보다 큼&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10 &amp;gt; 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;보다 작음&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 &amp;lt; 10&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;크거나 같음&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10 &amp;gt;= 10&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;작거나 같음&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 &amp;lt;= 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;5️⃣-논리-연산자&quot;&gt;5️⃣ 논리 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;논리 AND (두 조건 모두 참일 때 참)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(5 &amp;gt; 3) &amp;amp;&amp;amp; (8 &amp;gt; 5)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;논리 OR (두 조건 중 하나라도 참이면 참)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(5 &amp;gt; 10) \|\| (8 &amp;gt; 5)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;논리 NOT (조건의 결과를 반전)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!(5 &amp;gt; 10)&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;6️⃣-비트-연산자&quot;&gt;6️⃣ 비트 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 AND&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 &amp;amp; 3&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 &amp;amp; 011 = 001&lt;/code&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 OR&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 \| 3&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 \| 011 = 111&lt;/code&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 XOR&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 ^ 3&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 ^ 011 = 110&lt;/code&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 NOT (1의 보수)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~5&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-6&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~0101 = 1010&lt;/code&gt; 2의 보수로)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;왼쪽 시프트&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 &amp;lt;&amp;lt; 1&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 &amp;lt;&amp;lt; 1 = 1010&lt;/code&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;오른쪽 시프트 (부호 유지)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 &amp;gt;&amp;gt; 1&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 &amp;gt;&amp;gt; 1 = 010&lt;/code&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;오른쪽 시프트 (부호 무시)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5 &amp;gt;&amp;gt;&amp;gt; 1&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (이진수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101 &amp;gt;&amp;gt;&amp;gt; 1 = 010&lt;/code&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;7️⃣-삼항-연산자&quot;&gt;7️⃣ 삼항 연산자&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;예시&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;? :&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;조건 ? 참일 때 값 : 거짓일 때 값&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int result = (10 &amp;gt; 5) ? 1 : 0;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;연산자-우선순위&quot;&gt;연산자 우선순위&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;순위&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;1&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;괄호, 배열 접근, 객체 멤버 접근&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;2&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!&lt;/code&gt;, 단항 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;, 단항 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;증감 연산자, 비트 NOT, 논리 NOT, 양수/음수 부호&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;3&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;곱셈, 나눗셈, 나머지&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;4&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;덧셈, 뺄셈&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 시프트&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instanceof&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비교 연산자&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;7&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!=&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;동등 비교 연산자&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 AND&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 XOR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\|&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 OR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;11&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;논리 AND&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;12&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\|\|&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;논리 OR&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;13&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;? :&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;삼항 조건 연산자&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;14&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*=&lt;/code&gt; 등&lt;/span&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;할당 연산자&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;-1회-중간-점검&quot;&gt;📜 1회 중간 점검&lt;/h1&gt;
+
+&lt;h3 id=&quot;1-기본-출력-hello-java-world라는-문자열을-화면에-출력하는-프로그램을-작성하세요&quot;&gt;1. [기본 출력] &lt;br /&gt;“Hello, Java World!”라는 문자열을 화면에 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(&quot;Hello, Java World!&quot;);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;2-이름-출력-문자열-변수에-자신의-이름을-저장하고-내-이름은-이름입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;2. [이름 출력] &lt;br /&gt;문자열 변수에 자신의 이름을 저장하고, “내 이름은 [이름]입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		String name = &quot;홍길동&quot;;
+		System.out.println(&quot;내 이름은 &quot;+ name +&quot; 입니다.&quot;);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;3-두-수의-합-두-개의-정수-변수-a와-b에-각각-5와-7을-저장하고-두-수의-합을-출력하는-프로그램을-작성하세요&quot;&gt;3. [두 수의 합] &lt;br /&gt;두 개의 정수 변수 a와 b에 각각 5와 7을 저장하고, 두 수의 합을 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 7;
+
+		System.out.println(a + b);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;4-간단한-계산기-두-정수-x와-y를-변수에-저장하고-두-수의-덧셈-뺄셈-곱셈-나눗셈-결과를-각각-다른-줄에-출력하는-프로그램을-작성하세요&quot;&gt;4. [간단한 계산기] &lt;br /&gt;두 정수 x와 y를 변수에 저장하고, 두 수의 덧셈, 뺄셈, 곱셈, 나눗셈 결과를 각각 다른 줄에 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		int x = 5;
+		int y = 3;
+
+		System.out.println(x + y);
+		System.out.println(x - y);
+		System.out.println(x * y);
+		System.out.println(x / y);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;5-자기소개-이름-나이-키cm를-각각의-변수에-저장하고-제-이름은-이름이고-나이는-나이세이며-키는-키cm입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;5. [자기소개] &lt;br /&gt;이름, 나이, 키(cm)를 각각의 변수에 저장하고, “제 이름은 [이름]이고, 나이는 [나이]세이며, 키는 [키]cm입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		String name = &quot;홍길동&quot;;
+		int age = 20;
+		double height = 177.4;
+		
+		System.out.println(&quot;제 이름은 &quot;+name+&quot;이고, 나이는 &quot;+age+&quot;세이며, 키는 &quot;+height+&quot;cm입니다.&quot;);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;6-문자열-연결하기-두-개의-문자열-변수-firstname과-lastname을-선언하고-각각-자신의-이름을-저장한-후-두-문자열을-연결하여-전체-이름을-출력하는-프로그램을-작성하세요&quot;&gt;6. [문자열 연결하기] &lt;br /&gt;두 개의 문자열 변수 firstName과 lastName을 선언하고 각각 자신의 이름을 저장한 후, 두 문자열을 연결하여 전체 이름을 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		String firstName = &quot;홍&quot;;
+		String lastName = &quot;길동&quot;;
+		System.out.println(firstName + lastName);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;7-사각형-넓이-계산-가로와-세로-길이를-정수-변수로-선언하고-값을-지정한-후-사각형의-넓이를-계산하여-가로-가로cm-세로-세로cm인-사각형의-넓이는-넓이cm입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;7. [사각형 넓이 계산] &lt;br /&gt;가로와 세로 길이를 정수 변수로 선언하고 값을 지정한 후, 사각형의 넓이를 계산하여 “가로 [가로]cm, 세로 [세로]cm인 사각형의 넓이는 [넓이]cm²입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+	public static void main(String[] args) {
+		int width = 8;
+		int height = 5;
+		
+		int area = width * height;
+		System.out.println(&quot;가로 &quot;+ width +&quot;cm, 세로 &quot;+height+&quot;cm인 사각형의 넓이는 &quot;+area+&quot;cm²입니다.&quot;);
+	}
+}
+``` --&gt;
+&lt;h3 id=&quot;8-평균-계산하기-세-과목국어-영어-수학의-점수를-정수-변수로-선언하고-값을-지정한-후-평균-점수를-계산하여-출력하는-프로그램을-작성하세요&quot;&gt;8. [평균 계산하기] &lt;br /&gt;세 과목(국어, 영어, 수학)의 점수를 정수 변수로 선언하고 값을 지정한 후, 평균 점수를 계산하여 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        int korean = 85;
+        int english = 92;
+        int math = 78;
+        
+        int sum = korean + english + math;
+        int average = sum / 3;
+        
+        System.out.println(&quot;국어: &quot; + korean + &quot;점&quot;);
+        System.out.println(&quot;영어: &quot; + english + &quot;점&quot;);
+        System.out.println(&quot;수학: &quot; + math + &quot;점&quot;);
+        System.out.println(&quot;평균 점수: &quot; + average + &quot;점&quot;);
+    }
+}
+``` --&gt;
+&lt;h3 id=&quot;9-카운트다운-정수-변수에-10을-저장하고-이-값을-1씩-감소시키면서-카운트다운-숫자를-출력하는-프로그램을-작성하세요&quot;&gt;9. [카운트다운] &lt;br /&gt;정수 변수에 10을 저장하고, 이 값을 1씩 감소시키면서 “카운트다운: [숫자]”를 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        int count = 10;
+        
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+        count = count - 1;
+        System.out.println(&quot;카운트다운: &quot; + count);
+    }
+}
+``` --&gt;
 </description>
         <pubDate>Fri, 28 Feb 2025 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/java/2025/02/28/java1/</link>
