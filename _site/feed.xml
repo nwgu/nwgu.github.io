@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Mar 2025 16:51:07 +0900</pubDate>
-    <lastBuildDate>Sat, 08 Mar 2025 16:51:07 +0900</lastBuildDate>
+    <pubDate>Sat, 08 Mar 2025 22:49:52 +0900</pubDate>
+    <lastBuildDate>Sat, 08 Mar 2025 22:49:52 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -606,14 +606,17 @@
 
 &lt;h1 id=&quot;-중간-점검&quot;&gt;📜 중간 점검&lt;/h1&gt;
 
-&lt;h3 id=&quot;1-기본-출력-hello-java-world라는-문자열을-화면에-출력하는-프로그램을-작성하세요&quot;&gt;1. [기본 출력] &lt;br /&gt;“Hello, Java World!”라는 문자열을 화면에 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;h2 id=&quot;1-기본-출력-hello-java-world라는-문자열을-화면에-출력하는-프로그램을-작성하세요&quot;&gt;1. [기본 출력] &lt;br /&gt;“Hello, Java World!”라는 문자열을 화면에 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, Java World!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;2-이름-출력-문자열-변수에-자신의-이름을-저장하고-내-이름은-이름입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;2. [이름 출력] &lt;br /&gt;문자열 변수에 자신의 이름을 저장하고, “내 이름은 [이름]입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+
+&lt;h2 id=&quot;2-이름-출력-문자열-변수에-자신의-이름을-저장하고-내-이름은-이름입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;2. [이름 출력] &lt;br /&gt;문자열 변수에 자신의 이름을 저장하고, “내 이름은 [이름]입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;홍길동&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -621,7 +624,9 @@
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;3-두-수의-합-두-개의-정수-변수-a와-b에-각각-5와-7을-저장하고-두-수의-합을-출력하는-프로그램을-작성하세요&quot;&gt;3. [두 수의 합] &lt;br /&gt;두 개의 정수 변수 a와 b에 각각 5와 7을 저장하고, 두 수의 합을 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+
+&lt;h2 id=&quot;3-두-수의-합-두-개의-정수-변수-a와-b에-각각-5와-7을-저장하고-두-수의-합을-출력하는-프로그램을-작성하세요&quot;&gt;3. [두 수의 합] &lt;br /&gt;두 개의 정수 변수 a와 b에 각각 5와 7을 저장하고, 두 수의 합을 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -631,7 +636,9 @@
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;4-간단한-계산기-두-정수-x와-y를-변수에-저장하고-두-수의-덧셈-뺄셈-곱셈-나눗셈-결과를-각각-다른-줄에-출력하는-프로그램을-작성하세요&quot;&gt;4. [간단한 계산기] &lt;br /&gt;두 정수 x와 y를 변수에 저장하고, 두 수의 덧셈, 뺄셈, 곱셈, 나눗셈 결과를 각각 다른 줄에 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+
+&lt;h2 id=&quot;4-간단한-계산기-두-정수-x와-y를-변수에-저장하고-두-수의-덧셈-뺄셈-곱셈-나눗셈-결과를-각각-다른-줄에-출력하는-프로그램을-작성하세요&quot;&gt;4. [간단한 계산기] &lt;br /&gt;두 정수 x와 y를 변수에 저장하고, 두 수의 덧셈, 뺄셈, 곱셈, 나눗셈 결과를 각각 다른 줄에 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -644,7 +651,9 @@
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;5-자기소개-이름-나이-키cm를-각각의-변수에-저장하고-제-이름은-이름이고-나이는-나이세이며-키는-키cm입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;5. [자기소개] &lt;br /&gt;이름, 나이, 키(cm)를 각각의 변수에 저장하고, “제 이름은 [이름]이고, 나이는 [나이]세이며, 키는 [키]cm입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+
+&lt;h2 id=&quot;5-자기소개-이름-나이-키cm를-각각의-변수에-저장하고-제-이름은-이름이고-나이는-나이세이며-키는-키cm입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;5. [자기소개] &lt;br /&gt;이름, 나이, 키(cm)를 각각의 변수에 저장하고, “제 이름은 [이름]이고, 나이는 [나이]세이며, 키는 [키]cm입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;홍길동&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -655,7 +664,8 @@
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;6-문자열-연결하기-두-개의-문자열-변수-firstname과-lastname을-선언하고-각각-자신의-이름을-저장한-후-두-문자열을-연결하여-전체-이름을-출력하는-프로그램을-작성하세요&quot;&gt;6. [문자열 연결하기] &lt;br /&gt;두 개의 문자열 변수 firstName과 lastName을 선언하고 각각 자신의 이름을 저장한 후, 두 문자열을 연결하여 전체 이름을 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;h2 id=&quot;6-문자열-연결하기-두-개의-문자열-변수-firstname과-lastname을-선언하고-각각-자신의-이름을-저장한-후-두-문자열을-연결하여-전체-이름을-출력하는-프로그램을-작성하세요&quot;&gt;6. [문자열 연결하기] &lt;br /&gt;두 개의 문자열 변수 firstName과 lastName을 선언하고 각각 자신의 이름을 저장한 후, 두 문자열을 연결하여 전체 이름을 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;홍&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -664,7 +674,8 @@
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;7-사각형-넓이-계산-가로와-세로-길이를-정수-변수로-선언하고-값을-지정한-후-사각형의-넓이를-계산하여-가로-가로cm-세로-세로cm인-사각형의-넓이는-넓이cm입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;7. [사각형 넓이 계산] &lt;br /&gt;가로와 세로 길이를 정수 변수로 선언하고 값을 지정한 후, 사각형의 넓이를 계산하여 “가로 [가로]cm, 세로 [세로]cm인 사각형의 넓이는 [넓이]cm²입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;h2 id=&quot;7-사각형-넓이-계산-가로와-세로-길이를-정수-변수로-선언하고-값을-지정한-후-사각형의-넓이를-계산하여-가로-가로cm-세로-세로cm인-사각형의-넓이는-넓이cm입니다라고-출력하는-프로그램을-작성하세요&quot;&gt;7. [사각형 넓이 계산] &lt;br /&gt;가로와 세로 길이를 정수 변수로 선언하고 값을 지정한 후, 사각형의 넓이를 계산하여 “가로 [가로]cm, 세로 [세로]cm인 사각형의 넓이는 [넓이]cm²입니다.”라고 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -675,7 +686,8 @@
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;8-평균-계산하기-세-과목국어-영어-수학의-점수를-정수-변수로-선언하고-값을-지정한-후-평균-점수를-계산하여-출력하는-프로그램을-작성하세요&quot;&gt;8. [평균 계산하기] &lt;br /&gt;세 과목(국어, 영어, 수학)의 점수를 정수 변수로 선언하고 값을 지정한 후, 평균 점수를 계산하여 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;h2 id=&quot;8-평균-계산하기-세-과목국어-영어-수학의-점수를-정수-변수로-선언하고-값을-지정한-후-평균-점수를-계산하여-출력하는-프로그램을-작성하세요&quot;&gt;8. [평균 계산하기] &lt;br /&gt;세 과목(국어, 영어, 수학)의 점수를 정수 변수로 선언하고 값을 지정한 후, 평균 점수를 계산하여 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;korean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -692,7 +704,8 @@
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;9-카운트다운-정수-변수에-10을-저장하고-이-값을-1씩-감소시키면서-카운트다운-숫자를-출력하는-프로그램을-작성하세요&quot;&gt;9. [카운트다운] &lt;br /&gt;정수 변수에 10을 저장하고, 이 값을 1씩 감소시키면서 “카운트다운: [숫자]”를 출력하는 프로그램을 작성하세요.&lt;/h3&gt;
+&lt;h2 id=&quot;9-카운트다운-정수-변수에-10을-저장하고-이-값을-1씩-감소시키면서-카운트다운-숫자를-출력하는-프로그램을-작성하세요&quot;&gt;9. [카운트다운] &lt;br /&gt;정수 변수에 10을 저장하고, 이 값을 1씩 감소시키면서 “카운트다운: [숫자]”를 출력하는 프로그램을 작성하세요.&lt;/h2&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -721,6 +734,615 @@
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;10-변수-a와-b의-값을-서로-교체-숫자와-사칙연산-사용-금지&quot;&gt;10. 변수 a와 b의 값을 서로 교체, 숫자와 사칙연산 사용 금지&lt;/h2&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-챕터-4--제어문-조건문&quot;&gt;📌 챕터 4 : 제어문 (조건문)&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;프로그램 흐름을 제어하는 문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;if&quot;&gt;if&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본 문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건이 참일 때 실행할 코드&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건이 거짓일 때 실행할 코드 (선택 사항)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5보다 큽니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5보다 작거나 같습니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;else if를 사용한 여러 조건 처리&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;15보다 큽니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5보다 크고 15보다 작습니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5보다 작거나 같습니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;switch-문&quot;&gt;switch 문&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본 문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;변수&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;값1:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 값1일 때 실행할 코드&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;값2:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 값2일 때 실행할 코드&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 모든 case에 해당하지 않을 때 실행할 코드&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;월요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;화요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;수요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;목요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;금요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;토요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;일요일&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;잘못된 숫자&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;참고사항&quot;&gt;참고사항&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;if 문은 더 복잡한 조건을 처리할 수 있음 (예: 비교 연산자, 논리 연산자 사용)&lt;/li&gt;
+  &lt;li&gt;switch 문은 주로 특정 값에 대한 분기를 처리할 때 유용하고, 주로 정수형, 문자열, 열거형(enum) 등을 다룰 때 사용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-챕터-4--제어문-반복문&quot;&gt;📌 챕터 4 : 제어문 (반복문)&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터를 반복해서 출력하는 문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for-문&quot;&gt;for 문&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;초기화&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;반복&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;후&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;작업&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 반복할 코드&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;반복문 실행: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-출력&quot;&gt;반복문 실행: 0
+반복문 실행: 1
+반복문 실행: 2
+반복문 실행: 3
+반복문 실행: 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;초기화: int i = 0 (반복 변수 i를 0으로 시작).&lt;/li&gt;
+  &lt;li&gt;조건: i &amp;lt; 5 (i가 5보다 작은 동안 반복).&lt;/li&gt;
+  &lt;li&gt;반복 후 작업: i++ (반복이 끝날 때마다 i를 1씩 증가).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;while-문&quot;&gt;while 문&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 반복할 코드&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;반복문 실행: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-출력&quot;&gt;반복문 실행: 0
+반복문 실행: 1
+반복문 실행: 2
+반복문 실행: 3
+반복문 실행: 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;처음 i 값은 0이고, i &amp;lt; 5 조건이 참일 동안 반복이 실행된다.&lt;/li&gt;
+  &lt;li&gt;i++는 반복이 끝날 때마다 i 값을 1씩 증가시킨다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;do-while-문&quot;&gt;do while 문&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본문법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 반복할 코드&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;반복문 실행: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-출력&quot;&gt;반복문 실행: 0
+반복문 실행: 1
+반복문 실행: 2
+반복문 실행: 3
+반복문 실행: 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;조건이 false일지라도 최소 한 번은 반복이 실행&lt;/li&gt;
+  &lt;li&gt;조건 검사를 반복문이 끝난 후에 하기 때문에 처음 실행은 조건에 관계없이 실행&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;참고사항-1&quot;&gt;참고사항&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;for 문: 반복 횟수가 명확할 때, 또는 인덱스 변수를 사용해 반복할 때 유용&lt;/li&gt;
+  &lt;li&gt;while 문: 조건을 만족할 때 반복하고자 할 때 사용하며, 반복 횟수를 미리 알지 못할 때 유용&lt;/li&gt;
+  &lt;li&gt;do-while 문: 최소 한 번은 반복이 실행되어야 할 때 사용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- # 📜 중간 점검 - 조건문
+
+## 1. 짝수와 홀수 판별하기&lt;br/&gt;사용자가 입력한 숫자가 짝수인지 홀수인지 출력하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;숫자를 입력하세요: &quot;);
+        int num = scanner.nextInt();
+        
+        if (num % 2 == 0) {
+            System.out.println(&quot;짝수입니다.&quot;);
+        } else {
+            System.out.println(&quot;홀수입니다.&quot;);
+        }
+    }
+}
+```
+
+## 2. 사람의 나이로 구분하기&lt;br/&gt;나이를 입력받고, 18세 이상이면 &quot;성인&quot;, 18세 미만이면 &quot;미성년자&quot;라고 출력하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;나이를 입력하세요: &quot;);
+        int age = scanner.nextInt();
+        
+        if (age &gt;= 18) {
+            System.out.println(&quot;성인입니다.&quot;);
+        } else {
+            System.out.println(&quot;미성년자입니다.&quot;);
+        }
+    }
+}
+```
+
+## 3. 비밀번호 확인하기&lt;br/&gt;미리 설정된 비밀번호와 사용자가 입력한 비밀번호를 비교하여, 맞으면 &quot;비밀번호가 일치합니다.&quot; 그렇지 않으면 &quot;비밀번호가 틀렸습니다.&quot;를 출력하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String correctPassword = &quot;1234&quot;;
+        
+        System.out.print(&quot;비밀번호를 입력하세요: &quot;);
+        String inputPassword = scanner.next();
+        
+        if (inputPassword.equals(correctPassword)) {
+            System.out.println(&quot;비밀번호가 일치합니다.&quot;);
+        } else {
+            System.out.println(&quot;비밀번호가 틀렸습니다.&quot;);
+        }
+    }
+}
+```
+
+## 4. 학점 계산하기&lt;br/&gt;점수를 입력받고, 점수에 따라 A, B, C, D, F 학점을 출력하는 프로그램을 작성하세요. (90점 이상은 A, 80점 이상은 B, 70점 이상은 C, 60점 이상은 D, 나머지는 F)
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;점수를 입력하세요: &quot;);
+        int score = scanner.nextInt();
+        
+        if (score &gt;= 90) {
+            System.out.println(&quot;A&quot;);
+        } else if (score &gt;= 80) {
+            System.out.println(&quot;B&quot;);
+        } else if (score &gt;= 70) {
+            System.out.println(&quot;C&quot;);
+        } else if (score &gt;= 60) {
+            System.out.println(&quot;D&quot;);
+        } else {
+            System.out.println(&quot;F&quot;);
+        }
+    }
+}
+```
+
+## 5. 윤년 판별하기&lt;br/&gt;사용자가 입력한 연도가 윤년인지 아닌지 판별하는 프로그램을 작성하세요. (윤년의 조건: 4로 나누어지면 윤년, 단 100으로 나누어지면 윤년이 아니며, 400으로 나누어지면 윤년)
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;연도를 입력하세요: &quot;);
+        int year = scanner.nextInt();
+        
+        if ((year % 4 == 0 &amp;&amp; year % 100 != 0) || year % 400 == 0) {
+            System.out.println(&quot;윤년입니다.&quot;);
+        } else {
+            System.out.println(&quot;윤년이 아닙니다.&quot;);
+        }
+    }
+}
+```
+
+## 6. 점수에 따른 등급 출력하기&lt;br/&gt;점수를 입력받아, 100점 이상은 &quot;S&quot;, 90점 이상은 &quot;A&quot;, 80점 이상은 &quot;B&quot;, 70점 이상은 &quot;C&quot;, 그 외에는 &quot;D&quot;를 출력하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;점수를 입력하세요: &quot;);
+        int score = scanner.nextInt();
+        
+        if (score &gt;= 90) {
+            System.out.println(&quot;S&quot;);
+        } else if (score &gt;= 80) {
+            System.out.println(&quot;A&quot;);
+        } else if (score &gt;= 70) {
+            System.out.println(&quot;B&quot;);
+        } else if (score &gt;= 60) {
+            System.out.println(&quot;C&quot;);
+        } else {
+            System.out.println(&quot;D&quot;);
+        }
+    }
+}
+```
+
+## 7. 두 숫자 비교하기&lt;br/&gt;두 숫자를 입력받고, 두 숫자가 같으면 &quot;같다&quot;를 출력하고, 다르면 &quot;다르다&quot;를 출력하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;첫 번째 숫자를 입력하세요: &quot;);
+        int num1 = scanner.nextInt();
+        System.out.print(&quot;두 번째 숫자를 입력하세요: &quot;);
+        int num2 = scanner.nextInt();
+        
+        if (num1 == num2) {
+            System.out.println(&quot;같습니다.&quot;);
+        } else {
+            System.out.println(&quot;다릅니다.&quot;);
+        }
+    }
+}
+```
+
+## 8. 최댓값과 최솟값 구하기&lt;br/&gt;두 개의 숫자를 입력받고, 그 중 큰 값과 작은 값을 출력하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;첫 번째 숫자를 입력하세요: &quot;);
+        int num1 = scanner.nextInt();
+        System.out.print(&quot;두 번째 숫자를 입력하세요: &quot;);
+        int num2 = scanner.nextInt();
+        
+        int max = (num1 &gt; num2) ? num1 : num2;
+        int min = (num1 &lt; num2) ? num1 : num2;
+        
+        System.out.println(&quot;최댓값: &quot; + max);
+        System.out.println(&quot;최솟값: &quot; + min);
+    }
+}
+```
+
+## 9. 홀수와 짝수의 합 구하기&lt;br/&gt;1부터 100까지의 숫자 중 홀수와 짝수의 합을 각각 구해 출력하는 프로그램을 작성하세요.
+```java
+public class Main {
+    public static void main(String[] args) {
+        int evenSum = 0;
+        int oddSum = 0;
+        
+        for (int i = 1; i &lt;= 100; i++) {
+            if (i % 2 == 0) {
+                evenSum += i;
+            } else {
+                oddSum += i;
+            }
+        }
+        
+        System.out.println(&quot;짝수의 합: &quot; + evenSum);
+        System.out.println(&quot;홀수의 합: &quot; + oddSum);
+    }
+}
+```
+
+# 📜 중간 점검 - 반복문
+
+## 1. 1부터 10까지 출력하기&lt;br/&gt;1부터 10까지 숫자를 출력하는 프로그램을 작성하세요.
+```java
+public class Main {
+	public static void main(String[] args) {
+		
+		for (int i = 1; i &lt;= 10; i++) {
+			System.out.println(i);
+		}
+	}
+}
+```
+
+## 2. 1부터 100까지의 합 구하기&lt;br/&gt;1부터 100까지의 숫자 합을 구하는 프로그램을 작성하세요.
+```java
+public class Main {
+	public static void main(String[] args) {
+		int sum = 0;
+		
+		for (int i = 1; i &lt;= 100; i++) {
+			sum += i;
+		}
+		
+		System.out.println(sum);
+	}
+}
+```
+
+## 3. 구구단 출력하기&lt;br/&gt;구구단 중 하나를 입력받고, 해당 구구단을 출력하는 프로그램을 작성하세요. (예: 2단, 3단 등)
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print(&quot;단 수를 입력해 주세요 : &quot;);
+		int dan = scanner.nextInt();
+		
+		for (int i = 1; i &lt;= 9; i++) {
+			System.out.println(dan + &quot; * &quot; + i + &quot; = &quot; + i * dan);
+		}
+		
+		scanner.close();
+	}
+}
+```
+
+## 4. 숫자 거꾸로 출력하기&lt;br/&gt;10부터 1까지 숫자를 거꾸로 출력하는 프로그램을 작성하세요.
+```java
+public class Main {
+	public static void main(String[] args) {
+		
+		for (int i = 10; i &gt;= 1; i--) {
+			System.out.println(i);
+		}
+	}
+}
+```
+
+## 5. 숫자 맞추기 게임&lt;br/&gt;1부터 100까지의 숫자 중 랜덤 숫자를 하나 선택하고, 사용자에게 숫자를 맞추도록 하는 프로그램을 작성하세요. (힌트: 사용자가 입력한 숫자가 크거나 작다고 알려주기)
+```java
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();
+
+		// 캄퓨터가 랜덤으로 뽑은 값
+		int number = random.nextInt(100) + 1;
+		Scanner scanner = new Scanner(System.in);
+		int choiceNumber;
+
+		do {
+
+			System.out.print(&quot;1 부터 100 까지 숫자를 입력해주세요 : &quot;);
+
+			choiceNumber = scanner.nextInt();
+
+			if (choiceNumber &gt; number) {
+				System.out.println(&quot;더 작은 값 입니다!&quot;);
+			} else if (choiceNumber &lt; number) {
+				System.out.println(&quot;더 큰 값 입니다!&quot;);
+			} else {
+				System.out.println(&quot;정답 입니다!&quot;);
+			}
+
+		} while (choiceNumber != number);
+
+		scanner.close();
+
+	}
+}
+```
+
+## 6. 팩토리얼 계산하기&lt;br/&gt;사용자가 입력한 숫자의 팩토리얼을 구하는 프로그램을 작성하세요. (예: 5! = 5 * 4 * 3 * 2 * 1)
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		int f = scanner.nextInt();
+		int result = 1;
+
+		for (int i = f; i &gt;= 1; i--) {
+			result *= i;
+		}
+		
+		System.out.println(result);
+
+		scanner.close();
+	}
+}
+```
+
+## 7. 1부터 N까지의 합 구하기&lt;br/&gt;숫자 N을 입력받고, 1부터 N까지의 합을 구하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int n = scanner.nextInt();
+		int sum = 0;
+		
+		for (int i = 1; i &lt;= n; i++) {
+			sum += i;
+		}
+		
+		System.out.println(sum);
+	}
+}
+```
+
+## 8. 숫자 출력하기 (역순)&lt;br/&gt;숫자 N을 입력받고, N부터 1까지 역순으로 출력하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println(&quot;숫자를 입력해주세요 : &quot;);
+		
+		int n = scanner.nextInt();
+		
+		for (int i = n; i &gt;= 1; i--) {
+			System.out.println(i);
+		}
+		
+		scanner.close();
+	}
+}
+```
+
+## 9. 별 출력하기 (역삼각형)&lt;br/&gt;숫자를 입력받고, 그 숫자만큼 아래와 같이 역삼각형 형태의 별을 출력하는 프로그램을 작성하세요.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;출력할 별의 개수를 입력하세요: &quot;);
+        int n = scanner.nextInt();
+        
+        for (int i = n; i &gt;= 1; i--) {
+            for (int j = 1; j &lt;= i; j++) {
+                System.out.print(&quot;*&quot;);
+            }
+            System.out.println();
+        }
+    }
+}
+``` --&gt;
 </description>
         <pubDate>Fri, 28 Feb 2025 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/java/2025/02/28/java1/</link>
