@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Mar 2025 14:36:08 +0900</pubDate>
-    <lastBuildDate>Sat, 08 Mar 2025 14:36:08 +0900</lastBuildDate>
+    <pubDate>Sat, 08 Mar 2025 14:38:57 +0900</pubDate>
+    <lastBuildDate>Sat, 08 Mar 2025 14:38:57 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -36,7 +36,8 @@
 
 &lt;!-- - [`이클립스 다운로드`](https://www.eclipse.org/downloads/){:target=&quot;_blank&quot;} --&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.onlinegdb.com/online_java_compiler&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지&lt;/code&gt; &lt;/a&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.onlinegdb.com/online_java_compiler&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지&lt;/code&gt; &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mycompiler.io/ko/new/java&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;실습 페이지2&lt;/code&gt; &lt;/a&gt;
 &lt;!-- - [`실습 페이지2` ](https://replit.com/~){:target=&quot;_blank&quot;} --&gt;
 &lt;!-- - [`프로그래머스 자바 기초` ](https://school.programmers.co.kr/learn/courses/5/5-%EB%AC%B4%EB%A3%8C-%EC%9E%90%EB%B0%94-%EC%9E%85%EB%AC%B8){:target=&quot;_blank&quot;} --&gt;
 &lt;!-- - [`프로그래머스 코딩 기초 트레이닝` ](https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc&amp;page=1&amp;languages=java){:target=&quot;_blank&quot;} --&gt;
