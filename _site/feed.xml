@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Mar 2025 00:09:04 +0900</pubDate>
-    <lastBuildDate>Mon, 10 Mar 2025 00:09:04 +0900</lastBuildDate>
+    <pubDate>Mon, 10 Mar 2025 00:21:37 +0900</pubDate>
+    <lastBuildDate>Mon, 10 Mar 2025 00:21:37 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -68,10 +68,10 @@
 
 &lt;h1 id=&quot;-챕터-2--변수와-자료형&quot;&gt;📌 챕터 2 : 변수와 자료형&lt;/h1&gt;
 
-&lt;h2 id=&quot;-변수란&quot;&gt;📢 변수란?&lt;/h2&gt;
-&lt;p&gt;변수는 데이터를 저장하는 공간(메모리)으로,
-다른 데이터를 계속해서 변경할 수 있음.&lt;/p&gt;
-&lt;h2 id=&quot;변수를-선언하고-값을-할당하는-방법&quot;&gt;변수를 선언하고 값을 할당하는 방법&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;📢 변수란?&lt;/strong&gt;&lt;br /&gt;
+변수는 데이터를 저장하는 공간(메모리)으로,
+다른 데이터를 계속해서 변경할 수 있음.&lt;br /&gt;
+&lt;strong&gt;변수를 선언하고 값을 할당하는 방법&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 선언 시 꼭 지켜야 할 규칙&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// 밑줄, 문자, 숫자 사용 O&lt;/span&gt;
@@ -94,8 +94,8 @@
 &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grade&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&apos;A&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 문자형 변수&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;-상수란&quot;&gt;📢 상수란?&lt;/h2&gt;
-&lt;p&gt;한 번 초기화(할당)된 값을 변경할 수 없음.
+&lt;p&gt;&lt;strong&gt;📢 상수란?&lt;/strong&gt;
+한 번 초기화(할당)된 값을 변경할 수 없음.
 변하지 않는 값.&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//변수선언&lt;/span&gt;
@@ -111,7 +111,7 @@
 
 &lt;p&gt;자료형 까지는 무조건 작성해야되고 앞에다가 꼭 final 을 입력해줘야 상수값이 됨.&lt;/p&gt;
 
-&lt;h2 id=&quot;자바의-기본-자료형-표&quot;&gt;자바의 기본 자료형 표&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;자바의 기본 자료형 표&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -183,7 +183,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;추가-정보&quot;&gt;추가 정보&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;추가 정보&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;정수형&lt;/strong&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;byte&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long&lt;/code&gt;
@@ -214,9 +214,8 @@
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;-챕터-3--연산자&quot;&gt;📌 챕터 3 : 연산자&lt;/h1&gt;
-&lt;h2 id=&quot;-연산자-종류&quot;&gt;📢 연산자 종류&lt;/h2&gt;
 
-&lt;h2 id=&quot;1️⃣-산술-연산자&quot;&gt;1️⃣ 산술 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1️⃣ 산술 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -267,7 +266,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;2️⃣-증감-연산자&quot;&gt;2️⃣ 증감 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;2️⃣ 증감 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -306,7 +305,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;3️⃣-할당-연산자&quot;&gt;3️⃣ 할당 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;3️⃣ 할당 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -357,7 +356,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;4️⃣-비교-연산자&quot;&gt;4️⃣ 비교 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;4️⃣ 비교 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -408,7 +407,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;5️⃣-논리-연산자&quot;&gt;5️⃣ 논리 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;5️⃣ 논리 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -441,7 +440,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;6️⃣-비트-연산자&quot;&gt;6️⃣ 비트 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;6️⃣ 비트 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -498,7 +497,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;7️⃣-삼항-연산자&quot;&gt;7️⃣ 삼항 연산자&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;7️⃣ 삼항 연산자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -519,7 +518,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;연산자-우선순위&quot;&gt;연산자 우선순위&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ 연산자 우선순위&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -771,7 +770,7 @@
   &lt;li&gt;프로그램 흐름을 제어하는 문법&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;if&quot;&gt;if&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;if&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;기본 문법&lt;/li&gt;
@@ -813,7 +812,7 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;switch-문&quot;&gt;switch 문&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;switch&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;기본 문법&lt;/li&gt;
@@ -866,7 +865,7 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;참고사항&quot;&gt;참고사항&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ 참고사항&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;if 문은 더 복잡한 조건을 처리할 수 있음 (예: 비교 연산자, 논리 연산자 사용)&lt;/li&gt;
   &lt;li&gt;switch 문은 주로 특정 값에 대한 분기를 처리할 때 유용하고, 주로 정수형, 문자열, 열거형(enum) 등을 다룰 때 사용&lt;/li&gt;
@@ -878,7 +877,7 @@
   &lt;li&gt;데이터를 반복해서 출력하는 문법&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;for-문&quot;&gt;for 문&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;for 문&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;기본문법&lt;/li&gt;
@@ -912,7 +911,7 @@
   &lt;li&gt;반복 후 작업: i++ (반복이 끝날 때마다 i를 1씩 증가).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;while-문&quot;&gt;while 문&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;while 문&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;기본문법&lt;/li&gt;
@@ -947,7 +946,7 @@
   &lt;li&gt;i++는 반복이 끝날 때마다 i 값을 1씩 증가시킨다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;do-while-문&quot;&gt;do while 문&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;do while 문&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;기본문법&lt;/li&gt;
@@ -983,7 +982,7 @@
   &lt;li&gt;조건 검사를 반복문이 끝난 후에 하기 때문에 처음 실행은 조건에 관계없이 실행&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;참고사항-1&quot;&gt;참고사항&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;참고사항&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;for 문: 반복 횟수가 명확할 때, 또는 인덱스 변수를 사용해 반복할 때 유용&lt;/li&gt;
   &lt;li&gt;while 문: 조건을 만족할 때 반복하고자 할 때 사용하며, 반복 횟수를 미리 알지 못할 때 유용&lt;/li&gt;
@@ -1006,7 +1005,7 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;사용자로부터-입력-받기&quot;&gt;사용자로부터 입력 받기&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;사용자로부터 입력 받기&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;문자열 입력받기
