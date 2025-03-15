@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Mar 2025 00:21:37 +0900</pubDate>
-    <lastBuildDate>Mon, 10 Mar 2025 00:21:37 +0900</lastBuildDate>
+    <pubDate>Sat, 15 Mar 2025 13:30:49 +0900</pubDate>
+    <lastBuildDate>Sat, 15 Mar 2025 13:30:49 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -764,7 +764,7 @@
 &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;-챕터-4--제어문-조건문&quot;&gt;📌 챕터 4 : 제어문 (조건문)&lt;/h1&gt;
+&lt;h1 id=&quot;-챕터-4---1--제어문-조건문&quot;&gt;📌 챕터 4 - 1 : 제어문 (조건문)&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;프로그램 흐름을 제어하는 문법&lt;/li&gt;
@@ -871,7 +871,7 @@
   &lt;li&gt;switch 문은 주로 특정 값에 대한 분기를 처리할 때 유용하고, 주로 정수형, 문자열, 열거형(enum) 등을 다룰 때 사용&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;-챕터-4--제어문-반복문&quot;&gt;📌 챕터 4 : 제어문 (반복문)&lt;/h1&gt;
+&lt;h1 id=&quot;-챕터-4---2--제어문-반복문&quot;&gt;📌 챕터 4 - 2 : 제어문 (반복문)&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;데이터를 반복해서 출력하는 문법&lt;/li&gt;
@@ -1441,6 +1441,282 @@
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-챕터-5--배열&quot;&gt;📌 챕터 5 : 배열&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;자바에서 배열은 같은 타입의 데이터를 저장할 수 있는 데이터 구조이다.&lt;/li&gt;
+  &lt;li&gt;배열을 사용하면 여러 개의 값을 하나의 변수명으로 관리할 수 있으며, 배열의 크기는 고정적이다.&lt;/li&gt;
+  &lt;li&gt;배열의 각 요소는 0부터 시작하는 인덱스를 통해 접근한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 배열 선언&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;타입[] 배열변수이름;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 정수형 배열 선언&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 배열 생성&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;배열이름 = new 타입[배열의 크기];&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 배열 선언과 생성 동시에 하기&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;4. 배열 초기화&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;5. 배열의 크기&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// numbers 배열의 크기&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;전체코드 예시&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 크기 5인 정수 배열 생성&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 배열 초기화&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 배열 출력&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;numbers[&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;] = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;선언과 동시에 초기화도 가능&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;95&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;88&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 초기값으로 배열 생성&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;배열 인덱스 개념&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;인덱스는 배열 내 각 요소의 위치를 가리키는 숫자이고, 자바에서 배열 인덱스는 0부터 시작하는 특징이 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 첫 번째 요소: 인덱스 0&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 두 번째 요소: 인덱스 1&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 세 번째 요소: 인덱스 2&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 마지막 요소: 인덱스 (배열 길이 - 1)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 예를 들어, 크기가 5인 배열의 인덱스 범위는 0부터 4까지이다.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 유효한 인덱스: 0, 1, 2, 3, 4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-중간-점검---배열&quot;&gt;📜 중간 점검 - 배열&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 1: 배열 생성 및 초기화&lt;br /&gt;정수형 배열을 크기 5로 생성하고 각 요소에 1부터 5까지의 값을 순서대로 저장한 후, 모든 요소를 출력하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        // 크기 5의 정수형 배열 생성
+        int[] numbers = new int[5];
+        
+        // 1부터 5까지 값 저장
+        for (int i = 0; i &lt; numbers.length; i++) {
+            numbers[i] = i + 1;
+        }
+        
+        // 모든 요소 출력
+        for (int i = 0; i &lt; numbers.length; i++) {
+            System.out.println(&quot;numbers[&quot; + i + &quot;] = &quot; + numbers[i]);
+        }
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 2: 배열 요소의 합 구하기&lt;br /&gt;크기가 10인 정수형 배열을 생성하고 임의의 값으로 초기화한 후, 모든 요소의 합을 계산하여 출력하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        // 크기 10인 정수형 배열 생성 및 초기화
+        int[] numbers = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50};
+        
+        // 합 계산
+        int sum = 0;
+        for (int i = 0; i &lt; numbers.length; i++) {
+            sum += numbers[i];
+        }
+        
+        // 결과 출력
+        System.out.println(&quot;배열 요소의 합: &quot; + sum);
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 3: 배열에서 최댓값 찾기&lt;br /&gt;정수형 배열이 주어졌을 때, 배열에서 가장 큰 값을 찾아 출력하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {7, 3, 9, 2, 8, 6, 1, 5, 4};
+        
+        // 최댓값 찾기
+        int max = numbers[0]; // 첫 번째 요소를 최댓값으로 초기화
+        
+        for (int i = 1; i &lt; numbers.length; i++) {
+            if (numbers[i] &gt; max) {
+                max = numbers[i];
+            }
+        }
+        
+        // 결과 출력
+        System.out.println(&quot;배열의 최댓값: &quot; + max);
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 4: 배열 요소 역순 출력&lt;br /&gt;정수형 배열이 주어졌을 때, 배열의 요소를 역순으로 출력하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        
+        System.out.println(&quot;배열 요소 역순 출력:&quot;);
+        for (int i = numbers.length - 1; i &gt;= 0; i--) {
+            System.out.println(numbers[i]);
+        }
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 5: 짝수 요소만 출력&lt;br /&gt;정수형 배열에서 짝수인 요소만 출력하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        
+        System.out.println(&quot;짝수인 요소:&quot;);
+        for (int i = 0; i &lt; numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {
+                System.out.println(numbers[i]);
+            }
+        }
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 6: 배열 복사&lt;br /&gt;크기가 5인 정수형 배열 A를 생성하고 임의의 값으로 초기화한 후, 같은 크기의 배열 B에 A의 내용을 복사하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        // 배열 A 생성 및 초기화
+        int[] A = {10, 20, 30, 40, 50};
+        
+        // 배열 B 생성
+        int[] B = new int[5];
+        
+        // A의 내용을 B에 복사
+        for (int i = 0; i &lt; A.length; i++) {
+            B[i] = A[i];
+        }
+        
+        // 배열 B 출력
+        System.out.println(&quot;배열 B의 내용:&quot;);
+        for (int i = 0; i &lt; B.length; i++) {
+            System.out.println(&quot;B[&quot; + i + &quot;] = &quot; + B[i]);
+        }
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 7: 배열에서 특정 값 검색&lt;br /&gt;정수형 배열에서 사용자가 입력한 값이 있는지 검색하고, 있다면 해당 값의 인덱스를, 없다면 “값이 존재하지 않습니다”를 출력하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {7, 3, 9, 2, 8, 6, 1, 5, 4};
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;검색할 값을 입력하세요: &quot;);
+        int searchValue = scanner.nextInt();
+        
+        boolean found = false;
+        int index = -1;
+        
+        for (int i = 0; i &lt; numbers.length; i++) {
+            if (numbers[i] == searchValue) {
+                found = true;
+                index = i;
+                break;
+            }
+        }
+        
+        if (found) {
+            System.out.println(&quot;값 &quot; + searchValue + &quot;는 인덱스 &quot; + index + &quot;에 있습니다.&quot;);
+        } else {
+            System.out.println(&quot;값이 존재하지 않습니다.&quot;);
+        }
+        
+        scanner.close();
+    }
+}
+``` --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문제 8: 배열 요소 평균 계산&lt;br /&gt;실수형 배열에 저장된 학생들의 점수를 이용하여 평균 점수를 계산하는 프로그램을 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ```java
+public class Main {
+    public static void main(String[] args) {
+        double[] scores = {85.5, 90.0, 78.5, 92.5, 88.0};
+        
+        double sum = 0;
+        for (int i = 0; i &lt; scores.length; i++) {
+            sum += scores[i];
+        }
+        
+        double average = sum / scores.length;
+        
+        System.out.println(&quot;학생들의 평균 점수: &quot; + average);
+    }
+}
+``` --&gt;
 </description>
         <pubDate>Sat, 08 Mar 2025 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/java/2025/03/08/java1/</link>
