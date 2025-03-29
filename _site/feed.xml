@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Mar 2025 16:55:24 +0900</pubDate>
-    <lastBuildDate>Sat, 29 Mar 2025 16:55:24 +0900</lastBuildDate>
+    <pubDate>Sat, 29 Mar 2025 17:33:14 +0900</pubDate>
+    <lastBuildDate>Sat, 29 Mar 2025 17:33:14 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -3361,6 +3361,15 @@ public class Main {
 홍길동: 85
 김영희: 92
 박철수: 78
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;문제 4: 
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;학생들을 담는 리스트를 만든 후, 각각의 사용자 정보를 담는 Map 을 그 안에다가 담고, 해당 리스트를 출력해주세요&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;홍길동 : 22
+홍길순 : 33
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;!-- 문제 4: HashMap과 반복문 사용
