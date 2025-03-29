@@ -1,0 +1,41 @@
+---
+layout: post
+title: "java2"
+date: 2025-03-25
+categories: java
+tags: []
+---
+
+<!-- https://postimages.org/  -->
+# ⭐️ 자바2 - 25.04.05
+
+# 📌 교육과정
+- 컬렉션 프레임워크
+- 다양한 웹 프로그래밍 이론
+- 프로그램 구현 실습
+
+# 📌 개발환경(IDE) 설치
+**자바는 보통 이클립스 라는 툴을 사용**
+- [jdk 설치 (자바 개발 프로그램)](https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe){:target="_blank"}
+- [이클립스 설치 (자바를 이용하여 소프트웨어 개발을 돕는 프로그램)](https://www.eclipse.org/downloads/){:target="_blank"}
+
+**다운 완료 되었다면 자바의 환경 변수를 맞춰줘야 함**
+- [자바 환경변수 설정](https://velog.io/@bi-sz/Java-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0){:target="_blank"}
+
+# 📌 CRUD 란?
+
+**데이터베이스 또는 저장소에서 데이터를 다루는 기본적인 네 가지 기능을 의미**
+
+- Create (생성): 새로운 데이터 레코드를 만들거나 추가하는 기능
+- Read (읽기): 기존 데이터를 조회하거나 검색하는 기능
+- Update (수정): 기존 데이터를 변경하거나 업데이트하는 기능
+- Delete (삭제): 기존 데이터를 제거하는 기능
+
+**예시**
+- 게시물 작성 = Create
+- 게시물 보기 = Read
+- 게시물 수정 = Update
+- 게시물 삭제 = Delete
+
+간단하지만 강력한 개념으로, 복잡한 애플리케이션도 결국은 이 기본 기능들의 조합으로 구성된다.
+

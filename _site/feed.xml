@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Mar 2025 22:49:44 +0900</pubDate>
-    <lastBuildDate>Sun, 23 Mar 2025 22:49:44 +0900</lastBuildDate>
+    <pubDate>Sat, 29 Mar 2025 15:22:45 +0900</pubDate>
+    <lastBuildDate>Sat, 29 Mar 2025 15:22:45 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -2875,7 +2875,509 @@ Getter와 Setter 메소드를 통해 객체의 상태에 접근하고 수정
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;!-- # 📌 챕터 8 : 예외처리 --&gt;
+&lt;h1 id=&quot;-챕터-8--예외처리&quot;&gt;📌 챕터 8 : 예외처리&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;프로그램이 실행되는 동안 예외가 발생되면 문제가 커지기 때문에, 그에 대한 상황이 생기지않게 미리 작업해두는 안전장치&lt;/li&gt;
+  &lt;li&gt;원래 예외 및 에러가 발생되면 프로그램이 종료됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;문법&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 1. 여기 코드블록에서 실행되면서 발생되는 예외를&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 2. 여기다가 던진다.&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;예시코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이렇게 하면  Index 4 out of bounds for length 3 이라는 예외가 발생된다.&lt;/li&gt;
+  &lt;li&gt;당연히 3개밖에 없는 정적배열방에 인덱스 4로 접근했기 때문에.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+		
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//  Index 4 out of bounds for length 3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아래코드는 위 코드 예외를 잡은 코드&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+    
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 범위를 벗어남!!!&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 여기있는 예외가 해당 런타임 에러를 잡아서 예외 종류 확인 가능&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 출력 : Index 4 out of bounds for length 3 &lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 위에서 예외처리를 진행했기 때문에, 아래 출력문도 출력 된다.&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;계속 실행&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 처럼 try 안의 로직이 문제가 생겼을 때 catch 가 그걸 잡고 대신 실행해줌
+하지만 되도록이면 어떤 예외가 발생될지 “어느정도는” 알 수 있기 때문에,
+&lt;br /&gt;
+해당 예외에 대한 클래스를 불러와서 미리 “명시” 해두는 게 좋음&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;예시코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 이 코드는 예외를 던짐&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ArrayIndexOutOfBoundsException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Exception 클래스가 아닌,&lt;/span&gt;
+                                                &lt;span class=&quot;c1&quot;&gt;// 실제 배열 범위 벗어났을 떄 나는 에러를 명시&lt;/span&gt;
+     &lt;span class=&quot;c1&quot;&gt;// 코드를 읽는 사람이 즉시 배열 인덱스 문제임을 알 수 있음&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Index 4 out of bounds for length 3&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;왜 굳이 이렇게 하는데??&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;명확한 오류 원인 파악
+&lt;br /&gt;
+ —-&amp;gt; 코드를 읽는 개발자가 어떤 문제가 예상되는지 즉시 알 수 있음
+&lt;br /&gt;
+ —-&amp;gt; 디버깅 시 발생 가능한 문제의 범위를 좁힐 수 있음&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;예외 처리의 세분화
+&lt;br /&gt;
+ —-&amp;gt; 서로 다른 예외에 대해 서로 다른 처리를 할 수 있음&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;필요한 예외만 처리
+&lt;br /&gt;
+—-&amp;gt; 포괄적인 예외 처리(Exception e)는 예상치 못한 예외까지 잡아버릴 수 있음
+&lt;br /&gt;
+—-&amp;gt; 구체적인 예외 클래스를 사용하면 필요한 예외만 정확하게 처리할 수 있음&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;예시코드2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 출력 : 0&lt;/span&gt;
+    
+    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// NullPointerException 발생&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ArrayIndexOutOfBoundsException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 배열 범위 예외&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;배열 범위를 벗어났어.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;NullPointerException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// null 인데 메소드나 멤버에 접근하려고 할 때 예외&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 이렇게 catch 를 추가해서 예외를 여러 개 추가할 수 있다.&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;널 값의 길이를 재려고 해서 예외가 발생됐어.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;finally&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;finally 블록은 자바의 예외 처리 구조인 try-catch 구문에서 선택적으로 사용할 수 있는 블록&lt;/li&gt;
+  &lt;li&gt;finally 블록의 핵심 특징은 예외 발생 여부와 상관없이 항상 실행이 된다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;가장 일반적인 용도는 자원을 안전하게 해제하기 위함 ( 자원 해제 보장 )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;표준입력 처리때 예시 코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 표준 입력 생성&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 정수 값으로 받음&lt;/span&gt;
+        
+    
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 정수가 아닌 다른 값으로 받을 때 예외 발생&lt;/span&gt;
+    
+    
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 예외가 발생되든 말든 작업이 끝났으면 스캐너 객체 자원 닫아주기&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 왜? 만약 자원을 계속 물고 있으면 메모리 문제가 발생되기 때문에&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;계속실행!!!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-중간-점검---예외처리&quot;&gt;📜 중간 점검 - 예외처리&lt;/h1&gt;
+
+&lt;p&gt;정수를 0으로 나누는 코드를 작성하고, 발생하는 ArithmeticException을 처리하세요.
+&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;두 정수 a와 b를 입력받으세요.&lt;/li&gt;
+  &lt;li&gt;a를 b로 나눈 결과를 출력하세요.&lt;/li&gt;
+  &lt;li&gt;b가 0일 경우 발생하는 예외를 처리하고 “0으로 나눌 수 없습니다.”라는 메시지를 출력하세요.&lt;/li&gt;
+  &lt;li&gt;finally 블록에서 “계산이 종료되었습니다.”라는 메시지를 출력하세요.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- ```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        try {
+            System.out.print(&quot;첫 번째 정수를 입력하세요: &quot;);
+            int a = scanner.nextInt();
+            
+            System.out.print(&quot;두 번째 정수를 입력하세요: &quot;);
+            int b = scanner.nextInt();
+            
+            int result = a / b; // b가 0이면 ArithmeticException 발생
+            System.out.println(a + &quot; / &quot; + b + &quot; = &quot; + result);
+            
+        } catch (ArithmeticException e) {
+            System.out.println(&quot;0으로 나눌 수 없습니다.&quot;);
+        } finally {
+            System.out.println(&quot;계산이 종료되었습니다.&quot;);
+            scanner.close();
+        }
+    }
+}
+``` --&gt;
+
+&lt;p&gt;배열에 접근할 때 발생할 수 있는 ArrayIndexOutOfBoundsException을 처리하세요.
+&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;크기가 5인 정수 배열을 선언하고 값을 할당하세요.&lt;/li&gt;
+  &lt;li&gt;사용자로부터 인덱스를 입력받아 해당 인덱스의 배열 값을 출력하세요.&lt;/li&gt;
+  &lt;li&gt;잘못된 인덱스 접근 시 발생하는 예외를 처리하고 적절한 메시지를 출력하세요.&lt;/li&gt;
+  &lt;li&gt;finally 블록에서 프로그램 실행 여부와 관계없이 “배열 접근 작업이 완료되었습니다.”를 출력하세요.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- ```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numbers = {10, 20, 30, 40, 50}; // 크기가 5인 배열
+        
+        try {
+            System.out.print(&quot;접근할 배열의 인덱스를 입력하세요(0-4): &quot;);
+            int index = scanner.nextInt();
+            
+            System.out.println(&quot;numbers[&quot; + index + &quot;] = &quot; + numbers[index]);
+            
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(&quot;유효하지 않은 인덱스입니다. 0부터 &quot; + (numbers.length - 1) + &quot; 사이의 값을 입력하세요.&quot;);
+        } finally {
+            System.out.println(&quot;배열 접근 작업이 완료되었습니다.&quot;);
+            scanner.close();
+        }
+    }
+}
+``` --&gt;
+
+&lt;!-- ********************************************************************************************************************* --&gt;
+
+&lt;!-- 
+# 📌 챕터 9 : 제네릭
+클래스나 메서드가 사용할 데이터 타입을 미리 지정하는 방법으로, 오류 방지와 불필요한 타입 변환을 줄여 코드가 깔끔해지는 기능이다.
+
+**예시코드 (제네릭 클래스)**
+
+```java
+class Box&lt;T&gt; { // 여기 보이는 T 는 앞으로 들어올 특정 타입이라고 생각하면 된다. 뭐라고 써도 상관 없음 단, 클래스명 옆에 쓴 알파벳이랑 아래랑 다 맞춰줘야 함
+     
+    private T item; // 특정 변수가 들어올 변수
+    
+    public void setItem(T item) { // 특정 변수를 세팅해주는 메서드
+        this.item = item;
+    }
+    
+    public T getItem() { // 특정 변수를 리턴해주는 메서드
+        return item;
+    }
+}
+```
+
+**예시코드 (제네릭 사용예제)**
+
+```java
+// 문자열을 담는 Box
+Box&lt;String&gt; stringBox = new Box&lt;String&gt;();
+stringBox.setItem(&quot;안녕하세요&quot;);
+String str = stringBox.getItem();  // 타입 변환 필요 없음
+
+// 정수를 담는 Box
+Box&lt;Integer&gt; integerBox = new Box&lt;Integer&gt;();
+integerBox.setItem(100);
+Integer num = integerBox.getItem();  // 타입 변환 필요 없음
+```
+
+**언제 제네릭을 사용 하는지?**
+- 컬렉션 클래스를 사용할 때: List, Set, Map 등의 컬렉션은 거의 항상 제네릭과 함께 사용
+- 여러 타입에 대해 동일한 기능을 제공하는 클래스를 만들 때: 앞서 본 Box 클래스처럼 다양한 타입의 객체를 담을 수 있는 컨테이너를 만들 때 유용
+- 타입 안전성이 중요한 상황에서: 코드의 오류를 컴파일 시점에 발견하고 싶을 때 사용
+- 코드 중복을 줄이고 싶을 때: 여러 타입에 대해 비슷한 기능을 하는 클래스를 여러 개 만드는 대신, 하나의 제네릭 클래스로 해결할 수 있음
+
+
+# 📌 챕터 10 : 컬렉션 프레임워크
+
+자바에서 데이터를 저장하고 처리하기 위한 클래스와 인터페이스 집합. 개발자가 데이터를 쉽게 다룰 수 있게 해주고, 이미 만들어진 집합이라 가져다 쓰기만 하면 됨.
+
+**크게 Collection, Map 인터페이스로 나뉨**
+
+**1. Collection 인터페이스**
+&lt;br/&gt;
+
+**List 순서가 있는 데이터 집합, 중복 허용**
+- &lt;span style=&quot;background-color:#fff5b1&quot;&gt;**ArrayList**&lt;/span&gt; 내부적으로 배열을 사용, 빠른 조회
+- LinkedList 이중 연결 리스트, 빠른 삽입/삭제
+
+**Set 순서가 없는 데이터 집합, 중복 불허**
+
+
+- HashSet 해시 테이블을 사용한 구현, 빠른 검색
+- LinkedHashSet 해시 테이블과 연결 리스트를 결합, 삽입 순서 유지
+
+**2 . Map 인터페이스**
+- &lt;span style=&quot;background-color:#fff5b1&quot;&gt;**HashMap**&lt;/span&gt; 키-값 쌍, 해시 테이블 사용, 순서 보장 안함
+- LinkedHashMap 삽입 순서 유지하는 HashMap
+
+
+&lt;span style=&quot;background-color:#fff5b1&quot;&gt;웹 실무에서 크게 ArrayList 와 HashMap 을 많이 쓴다.&lt;/span&gt;
+
+**ArrayList 예시코드 및 제공되는 메서드**
+
+```java
+// 필수 임포트 작업
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	public static void main(String[] args) {
+
+		// 동적 배열로 어느정도까지는 길이 제한이 없음
+		// 해당 리스트에는 인트형태만 들어갈 수 있음
+		List&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;();
+
+		list.add(1); // 0번 인덱스에 1 할당
+		list.add(2); // 1번 인덱스에 2 할당
+		list.add(3); // 2번 인덱스에 3 할당
+
+		// 값 꺼내기
+		list.get(0); // 0번 인덱스 값
+		list.get(1); // 1번 인덱스 값
+		list.get(2); // 2번 인덱스 값
+
+		// 리스트 안에 들어가있는 특정 값 찾기
+		list.contains(4); // 4라는 정수 값이 있는지 없는지 체크 (true, false)
+		
+		// 리스트 안에 들어가있는 인덱스 값 찾기
+		list.indexOf(1); // 리스트 안에 값을 찾아서, 그 값의 자리에 있는 &quot;인덱스 값 반환&quot; (없으면 -1)
+		
+		// 값 지우기
+		list.remove(0); // 0번 인덱스 클리어
+
+		// 모든 값 지우기
+		list.clear(); // 모든 인덱스 값 클리어
+
+		// 리스트 안에 값이 비어있는지 안 비어있는지 체크
+		list.isEmpty(); // (true, false)
+
+	}
+}
+```
+
+**HashMap 예시코드 및 제공되는 메서드**
+```java
+// 필수 임포트 작업
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // 키-값 쌍으로 데이터를 저장하는 해시맵 생성
+        // 키는 String 타입, 값은 Integer 타입으로 설정
+        Map&lt;String, Integer&gt; map = new HashMap&lt;String, Integer&gt;();
+
+        // 값 추가하기
+        map.put(&quot;사과&quot;, 1000); // &quot;사과&quot; 키에 1000 값 할당
+        map.put(&quot;바나나&quot;, 2000); // &quot;바나나&quot; 키에 2000 값 할당
+        map.put(&quot;오렌지&quot;, 1500); // &quot;오렌지&quot; 키에 1500 값 할당
+
+        // 값 꺼내기
+        map.get(&quot;사과&quot;); // &quot;사과&quot; 키에 해당하는 값 반환 (1000)
+        map.get(&quot;바나나&quot;); // &quot;바나나&quot; 키에 해당하는 값 반환 (2000)
+        map.get(&quot;키위&quot;); // 존재하지 않는 키는 null 반환
+
+        // 특정 키가 존재하는지 확인
+        map.containsKey(&quot;사과&quot;); // &quot;사과&quot; 키가 있는지 확인 (true, false)
+        
+        // 특정 값이 존재하는지 확인
+        map.containsValue(2000); // 2000 값이 있는지 확인 (true, false)
+        
+        // 값 수정하기
+        map.put(&quot;사과&quot;, 1200); // 기존 키에 새로운 값을 넣으면 덮어씌워짐
+        
+        // 값 삭제하기
+        map.remove(&quot;바나나&quot;); // &quot;바나나&quot; 키와 해당 값을 맵에서 제거
+
+        // 모든 키 가져오기
+        map.keySet(); // 모든 키를 Set 형태로 반환
+
+        // 모든 값 가져오기
+        map.values(); // 모든 값을 Collection 형태로 반환
+
+        // 모든 키-값 쌍 가져오기
+        map.entrySet(); // 모든 키-값 쌍을 Set&lt;Map.Entry&lt;K,V&gt;&gt; 형태로 반환
+
+        // 맵 크기 확인
+        map.size(); // 맵에 저장된 키-값 쌍의 개수 반환
+
+        // 맵이 비어있는지 확인
+        map.isEmpty(); // 맵이 비어있는지 확인 (true, false)
+
+        // 모든 값 지우기
+        map.clear(); // 맵의 모든 키-값 쌍 제거
+    }
+}
+```
+
+# 📜 중간 점검 - 컬렉션 프레임워크
+
+문제 1: ArrayList 기본 활용
+목표: ArrayList를 사용하여 학생들의 이름을 저장하고 출력하는 프로그램을 작성하세요.
+
+1. 학생들의 이름을 저장할 ArrayList를 생성하세요.
+2. 학생 이름 5개를 리스트에 추가하세요.
+3. ArrayList에 저장된 이름들을 하나씩 출력하세요.
+
+```bash
+예시 출력:
+
+학생 이름 목록:
+홍길동
+김영희
+박철수
+이민호
+최지우
+```
+
+문제 2: ArrayList와 반복문 사용
+목표: ArrayList에 저장된 숫자의 합을 구하는 프로그램을 작성하세요.
+
+1. ArrayList&lt;Integer&gt;를 생성하고, 1부터 10까지의 숫자를 추가하세요.
+2. ArrayList에 저장된 숫자들의 합을 구하고 출력하세요.
+
+```bash
+예시 출력:
+
+숫자들의 합: 55
+```
+
+문제 3: HashMap 기본 활용
+목표: HashMap을 사용하여 학생들의 성적을 관리하는 프로그램을 작성하세요.
+
+1. 학생 이름을 키로, 성적을 값으로 저장할 HashMap을 생성하세요.
+2. 3명의 학생 이름과 그에 해당하는 성적을 입력하세요.
+3. 성적을 출력할 때, &quot;이름: 성적&quot; 형식으로 출력하세요.
+
+```bash
+예시 입력 및 출력:
+
+학생 이름과 성적을 입력하세요.
+- 홍길동: 85
+- 김영희: 92
+- 박철수: 78
+
+성적 목록:
+홍길동: 85
+김영희: 92
+박철수: 78
+```
+
+문제 4: HashMap과 반복문 사용
+목표: HashMap을 사용하여 각 학생의 과목별 점수를 관리하는 프로그램을 작성하세요.
+
+1. 각 학생의 이름을 키로, 과목 이름을 값으로 하는 HashMap을 생성하세요.
+2. 각 학생에 대해 3과목의 점수를 추가하고, 각 학생의 과목 점수를 출력하세요.
+3. 학생별 과목 점수 목록을 출력하세요.
+
+```bash
+예시 출력:
+
+학생 이름: 홍길동
+과목: 수학, 점수: 90
+과목: 영어, 점수: 85
+과목: 과학, 점수: 88
+
+학생 이름: 김영희
+과목: 수학, 점수: 92
+과목: 영어, 점수: 95
+과목: 과학, 점수: 80
+```
+
+
+문제 5: ArrayList와 HashMap을 함께 사용
+목표: ArrayList와 HashMap을 함께 사용하여 학생별로 과목별 점수를 관리하는 프로그램을 작성하세요.
+
+1. ArrayList를 사용하여 학생들의 이름을 저장하세요.
+2. 각 학생의 점수는 HashMap을 사용하여 관리하세요. HashMap의 키는 과목명이고, 값은 점수입니다.
+3. 학생별로 과목 점수를 출력하세요.
+
+```bash
+예시 출력:
+
+학생 이름: 홍길동
+과목: 수학, 점수: 90
+과목: 영어, 점수: 85
+과목: 과학, 점수: 88
+
+학생 이름: 김영희
+과목: 수학, 점수: 92
+과목: 영어, 점수: 95
+과목: 과학, 점수: 80
+```
+
+
+&lt;!-- 문제 6: HashMap을 사용한 데이터 검색
+목표: HashMap을 사용하여 직원들의 이름과 급여를 저장하고, 특정 직원의 급여를 검색하는 프로그램을 작성하세요.
+
+1. 직원 이름을 키로, 급여를 값으로 하는 HashMap을 생성하세요.
+2. 직원 5명의 이름과 급여를 입력받아 HashMap에 저장하세요.
+3. 사용자가 입력한 직원 이름에 대해 급여를 출력하는 기능을 구현하세요.
+
+```bash
+예시 입력 및 출력:
+
+직원 이름과 급여를 입력하세요:
+- 홍길동: 50000
+- 김영희: 55000
+- 박철수: 60000
+- 이민호: 70000
+- 최지우: 75000
+
+검색할 직원 이름을 입력하세요: 김영희
+김영희의 급여는 55000원입니다.
+```
+
+
+문제 7: ArrayList와 HashMap을 활용한 전화번호부
+목표: ArrayList와 HashMap을 사용하여 전화번호부를 만드는 프로그램을 작성하세요.
+
+1. HashMap을 사용하여 각 사람의 이름과 전화번호를 저장하세요.
+2. ArrayList에 전화번호부에 등록된 사람들의 이름을 저장하고, 이름을 기준으로 전화번호를 출력하는 기능을 구현하세요.
+
+```bash
+예시 입력 및 출력:
+전화번호부에 등록된 이름: 홍길동, 김영희, 박철수
+
+홍길동의 전화번호는 010-1234-5678입니다.
+김영희의 전화번호는 010-2345-6789입니다.
+박철수의 전화번호는 010-3456-7890입니다.
+``` --&gt;
 </description>
         <pubDate>Sat, 08 Mar 2025 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/java/2025/03/08/java1/</link>
