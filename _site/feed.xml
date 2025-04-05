@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Apr 2025 22:15:54 +0900</pubDate>
-    <lastBuildDate>Sat, 05 Apr 2025 22:15:54 +0900</lastBuildDate>
+    <pubDate>Sat, 05 Apr 2025 22:22:18 +0900</pubDate>
+    <lastBuildDate>Sat, 05 Apr 2025 22:22:18 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -272,9 +272,34 @@
 
 &lt;p&gt;&lt;strong&gt;04-05&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/nwgu/java2_textboard/commits/master/&quot; target=&quot;_blank&quot;&gt;프로젝트 코드 진행사항&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nwgu/java2_textboard/commits/master/?since=2025-04-05&amp;amp;until=2025-04-05&quot; target=&quot;_blank&quot;&gt;프로젝트 코드 진행사항&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;최근 소스다운로드&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/nwgu/java2_textboard/archive/refs/heads/master.zip&quot; target=&quot;_blank&quot;&gt;프로젝트 코드 다운로드&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;!--
+10. Article 객체를 만들어 List Article 로 변경하여 일관된 구조로 유지
+11. Article getter, setter, tostring, 생성자 등등
+12. 게시글 리스트 최신순으로 변경 size()-1
+13. /article/detial?id=5 만들어서 게시글 상세 추가
+
+14. split 메서드를 이용하여 상세 정보 얻어내기
+15. Integer.parseInt 로 게시글 번호값 정수전환하기
+16. 파라메터 유틸 만들어보기
+17. 게시글 삭제 작성
+18. ———&gt; 유저 도입
+19. 회원가입 진행 (데이터 등록)
+20. 유효성 검사 ( findById 도입 )
+21. while 문으로 아이디 및 비밀번호 확인 계속 물어보기
+22. 로그인 진행
+23. 로그인하면 전역적으로 세션뿌려주기
+24. 로그인 되면 명령창 앞에 닉네임 붙이기
+25. 로그아웃 진행 - 세션 날려주기
+26. 로그인 안하면 게시글 입력 안되게 처리
+27. 게시글 삭제 안되게 처리 --&gt;
 </description>
         <pubDate>Sat, 05 Apr 2025 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/java/2025/04/05/java2/</link>
