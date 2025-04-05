@@ -5,8 +5,8 @@
     <description>블로그</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Mar 2025 19:44:10 +0900</pubDate>
-    <lastBuildDate>Sun, 30 Mar 2025 19:44:10 +0900</lastBuildDate>
+    <pubDate>Sat, 05 Apr 2025 11:56:00 +0900</pubDate>
+    <lastBuildDate>Sat, 05 Apr 2025 11:56:00 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -54,17 +54,183 @@
 
 &lt;p&gt;간단하지만 강력한 개념으로, 복잡한 애플리케이션도 결국은 이 기본 기능들의 조합으로 구성된다.&lt;/p&gt;
 
-&lt;!-- # 📌 프로그램 구현 실습 - 텍스트 게시판 시작
+&lt;h1 id=&quot;-http-uri-구성-요소-설명&quot;&gt;📌 HTTP URI 구성 요소 설명&lt;/h1&gt;
 
-**목표 : 객체지향 프로그래밍의 기본 개념을 적용하여 텍스트 게시판 애플리케이션을 만들기**
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.example.com:443/products/categories?id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;123&amp;amp;sort&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;price#section2
+└─┬─┘   └─────┬─────┘ └┬┘ └───────┬───────┘└─────┬─────┘└──┬──┘
+  │           │         │          │               │          │
+ scheme    &lt;span class=&quot;nb&quot;&gt;hostname    &lt;/span&gt;port       path          query      fragment
+          └───────────┬───────────┘
+                     host
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-객체지향의 원칙으로 **캡슐화**, **추상화**, **상속**, **디형성** 등이 있다.
-&lt;br/&gt;그냥 편하게 **가성비** 있게 코드를 작성한다고 생각 하면 된다.
-&lt;br/&gt;굳이 손해 안 보고 재사용할건 재사용하고 버릴건 버리고 숨길건 숨기고. --&gt;
+&lt;p&gt;&lt;strong&gt;주요 구성 요소&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;구성 요소&lt;/th&gt;
+      &lt;th&gt;예시&lt;/th&gt;
+      &lt;th&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Scheme&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;사용할 프로토콜 (https, http, ftp 등)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Host&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;www.example.com&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;서버의 도메인 이름 또는 IP 주소&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Port&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:443&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;서버에 연결할 포트 번호 (기본값: HTTP=80, HTTPS=443)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Path&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/products/categories&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;서버 내 리소스 경로&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Query Parameters&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?id=123&amp;amp;sort=price&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;서버에 전달할 추가 파라미터 (키-값 쌍)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Fragment&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#section2&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;페이지 내 특정 섹션을 가리키는 앵커&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;주요 포트 번호&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;포트&lt;/th&gt;
+      &lt;th&gt;프로토콜&lt;/th&gt;
+      &lt;th&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;80&lt;/td&gt;
+      &lt;td&gt;HTTP&lt;/td&gt;
+      &lt;td&gt;일반 웹 트래픽 (암호화 없음)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;443&lt;/td&gt;
+      &lt;td&gt;HTTPS&lt;/td&gt;
+      &lt;td&gt;보안 웹 트래픽 (SSL/TLS 암호화)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;FTP&lt;/td&gt;
+      &lt;td&gt;파일 전송 프로토콜&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;22&lt;/td&gt;
+      &lt;td&gt;SSH&lt;/td&gt;
+      &lt;td&gt;보안 셸&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;25&lt;/td&gt;
+      &lt;td&gt;SMTP&lt;/td&gt;
+      &lt;td&gt;이메일 전송&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;110&lt;/td&gt;
+      &lt;td&gt;POP3&lt;/td&gt;
+      &lt;td&gt;이메일 수신&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3306&lt;/td&gt;
+      &lt;td&gt;MySQL&lt;/td&gt;
+      &lt;td&gt;MySQL 데이터베이스&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5432&lt;/td&gt;
+      &lt;td&gt;PostgreSQL&lt;/td&gt;
+      &lt;td&gt;PostgreSQL 데이터베이스&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;27017&lt;/td&gt;
+      &lt;td&gt;MongoDB&lt;/td&gt;
+      &lt;td&gt;MongoDB 데이터베이스&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;RESTful API Endpoints 예시&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;HTTP 메서드&lt;/th&gt;
+      &lt;th&gt;Endpoint&lt;/th&gt;
+      &lt;th&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GET&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;모든 사용자 목록 조회&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GET&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users/{id}&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;특정 ID의 사용자 조회&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;POST&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;새 사용자 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PUT&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users/{id}&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;특정 사용자 정보 전체 수정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PATCH&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users/{id}&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;특정 사용자 정보 일부 수정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DELETE&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users/{id}&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;특정 사용자 삭제&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;URL vs URI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;URL (Uniform Resource Locator)&lt;/strong&gt;: 리소스의 위치를 지정 (https://example.com/page)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;URI (Uniform Resource Identifier)&lt;/strong&gt;: 리소스를 식별하는 더 넓은 개념 (URL을 포함)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;API 경로 설계 모범 사례&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;명사 사용하기 (✓ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/products&lt;/code&gt; ✗ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/getProducts&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;복수형 사용하기 (✓ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/users&lt;/code&gt; ✗ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/user&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;계층 관계 표현하기 (✓ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/users/{id}/orders&lt;/code&gt; ✗ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/userOrders/{userId}&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;소문자 사용하기 (✓ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/api/users&lt;/code&gt; ✗ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/API/Users&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;하이픈(-) 사용하기 (✓ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/user-profiles&lt;/code&gt; ✗ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/user_profiles&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Tue, 25 Mar 2025 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/java/2025/03/25/java2/</link>
-        <guid isPermaLink="true">http://localhost:4000/java/2025/03/25/java2/</guid>
+        <pubDate>Sat, 05 Apr 2025 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/java/2025/04/05/java2/</link>
+        <guid isPermaLink="true">http://localhost:4000/java/2025/04/05/java2/</guid>
         
         
         <category>java</category>
